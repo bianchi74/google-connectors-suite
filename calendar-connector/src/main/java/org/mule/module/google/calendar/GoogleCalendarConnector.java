@@ -67,7 +67,7 @@ import com.google.api.services.calendar.model.FreeBusyRequest;
  *
  * @author mariano.gonzalez@mulesoft.com
  */
-@Connector(name="google-calendars", schemaVersion="1.0", friendlyName="Google Calendars Connector", minMuleVersion="3.3", configElementName="config-with-oauth")
+@Connector(name="google-calendars", schemaVersion="1.0", friendlyName="Google Calendars", minMuleVersion="3.3", configElementName="config-with-oauth")
 @OAuth2(
 		authorizationUrl = "https://accounts.google.com/o/oauth2/auth",
 		accessTokenUrl = "https://accounts.google.com/o/oauth2/token",

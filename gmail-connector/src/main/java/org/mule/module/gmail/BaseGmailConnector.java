@@ -83,7 +83,7 @@ public abstract class BaseGmailConnector extends AbstractGoogleOAuthConnector {
 	 * @param password only needed is you're using basic authentication. If you're using OAuth2 then this parameter is not used
 	 * @param folder the folder in which to search. If you want all of them then use ALL_MAIL
 	 * @param searchTerm an instance of {@link com.google.code.javax.mail.search.SearchTerm}. If not provided, then no filtering criteria is applied
-	 * @param expunge if true, all read messages will be deleted upon operation completion
+	 * @param expunge expunges all deleted messages if this flag is true
 	 * @param includeAttachments wether or not to also download the message's attachments. Default value is false bandwidth wise.
 	 * @return a list of {@link org.mule.module.gmail.model.MailMessage} representing the found messages
 	 * @throws MessagingException if an error is found accessing the mailbox
@@ -133,7 +133,7 @@ public abstract class BaseGmailConnector extends AbstractGoogleOAuthConnector {
 	 * @param messageId used to fetch one given message by id
 	 * @param subjectTerms a list of Strings which represent the subject terms that the messages need to have. This is an OR operation logic. All messages with any one of these terms will be returned
 	 * @param dateFormat the format to be used to parse the date attributes. If no dateFormat is specified, then RFC3339 is assumed
-	 * @param expunge if true, all read messages will be deleted upon operation completion
+	 * @param expunge expunges all deleted messages if this flag is true
 	 * @param includeAttachments wether or not to also download the message's attachments. Default value is false bandwidth wise.
 	 * @return a list of {@link org.mule.module.gmail.model.MailMessage}
 	 * @throws MessagingException if an error is found accessing the mailbox
@@ -272,9 +272,8 @@ public abstract class BaseGmailConnector extends AbstractGoogleOAuthConnector {
 				throw new RuntimeException(String.format("%d matches found on mailbox for id %s but only one was expected", msg.length, mailMessage.getGoogleId()));
 			}
 			
-			
-			folder.copyMessages(msg, trash);
 			msg[0].setFlag(Flag.DELETED, true);
+			folder.copyMessages(msg, trash);
 			
 		} finally {
 			this.closeFolder(folder, true);

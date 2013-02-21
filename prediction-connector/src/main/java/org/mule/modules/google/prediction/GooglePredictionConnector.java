@@ -51,7 +51,7 @@ import com.google.api.services.prediction.model.Input;
  *
  * @author MuleSoft, Inc.
  */
-@Connector(name="google-prediction", schemaVersion="1.0", friendlyName="Google Prediction Connector", minMuleVersion="3.3", configElementName="config-with-oauth")
+@Connector(name="google-prediction", schemaVersion="1.0", friendlyName="Google Prediction Connector", minMuleVersion="3.4", configElementName="config-with-oauth")
 @OAuth2(
         authorizationUrl = "https://accounts.google.com/o/oauth2/auth",
         accessTokenUrl = "https://accounts.google.com/o/oauth2/token",

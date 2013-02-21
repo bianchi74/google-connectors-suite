@@ -1,7 +1,7 @@
-Mule Google Calendar Connector
+Mule Gmail Cloud Connector
 =========================
 
-This connector will allow you to manipulate the calendar on the google apps service.
+This connector will allow you to access your Gmail account vi IMAP using basic authentication or OAuth2
 
 Installation and Usage
 ----------------------

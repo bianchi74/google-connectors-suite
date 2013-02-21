@@ -1,4 +1,4 @@
-Mule Google Contacts Connector
+Mule Google Prediction Connector
 =========================
 
 This connector will allow you to use the Google Prediction API

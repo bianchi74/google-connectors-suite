@@ -366,7 +366,7 @@ public class GoogleTasksConnector extends AbstractGoogleOAuthConnector {
 	@OAuthProtected
 	@OAuthInvalidateAccessTokenOn(exception=OAuthTokenExpiredException.class)
     public void deleteTask(@Optional @Default("@default") String taskListId, String taskId) throws IOException {
-    	this.client.tasks().delete(taskListId, taskId);
+    	this.client.tasks().delete(taskListId, taskId).execute();
     }
     
     /**

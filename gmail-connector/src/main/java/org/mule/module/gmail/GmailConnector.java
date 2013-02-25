@@ -40,7 +40,7 @@ import com.google.code.oauth.OAuth2Authenticator;
  *
  * @author mariano.gonzalez@mulesoft.com
  */
-@Connector(name="gmail", schemaVersion="1.0", friendlyName="GMail Connector (OAuth2)", minMuleVersion="3.3", configElementName="config-with-oauth")
+@Connector(name="gmail", schemaVersion="1.0", friendlyName="GMail Connector (OAuth2)", minMuleVersion="3.4", configElementName="config-with-oauth")
 @OAuth2(
 		authorizationUrl = "https://accounts.google.com/o/oauth2/auth",
 		accessTokenUrl = "https://accounts.google.com/o/oauth2/token",

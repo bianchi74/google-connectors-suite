@@ -2,11 +2,17 @@ com.google.gdata.client.contacts.transformers
 java.lang.holders
 org.mule.api.holders
 org.mule.modules.google.contact
+org.mule.modules.google.contact.adapter
 org.mule.modules.google.contact.adapters
 org.mule.modules.google.contact.agents
+org.mule.modules.google.contact.basic
+org.mule.modules.google.contact.callback
 org.mule.modules.google.contact.config
+org.mule.modules.google.contact.connection
+org.mule.modules.google.contact.devkit
 org.mule.modules.google.contact.oauth
 org.mule.modules.google.contact.process
 org.mule.modules.google.contact.processors
+org.mule.modules.google.contact.wrappers
 org.mule.modules.google.transformers
 

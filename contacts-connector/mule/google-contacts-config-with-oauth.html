@@ -237,7 +237,7 @@ Summary:
           <th>Schema Location</th><td>http://www.mulesoft.org/schema/mule/google-contacts/current/mule-google-contacts.xsd&nbsp;&nbsp;(<a href="google-contacts-schema.html">View Schema</a>)</td>
         </tr>
 <tr>
-          <th>Schema Version</th><td>1.0</td>
+          <th>Schema Version</th><td>1.1</td>
         </tr>
 <tr>
           <th>Minimum Mule Version</th><td>3.4</td>
@@ -949,7 +949,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                         <td class="jd-linkcol"><nobr>contact</nobr></td>
                         <td class="jd-descrcol">#[payload:]</td>
                         <td class="jd-descrcol"><i>Optional.&nbsp;</i>An instance of com.google.gdata.data.contacts.ContactEntry representing the contact to be updated</td>
-                        <td class="jd-descrcol">ContactEntry</td>
+                        <td class="jd-descrcol"><a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></td>
                         <td class="jd-descrcol">*/*</td>
                         <td class="jd-descrcol"></td>
                     </tr>
@@ -992,7 +992,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                 <th>Description</th>
              </tr>
              <tr>
-                <td class="jd-descrcol">ContactEntry</td>
+                <td class="jd-descrcol"><a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></td>
                 <td class="jd-descrcol">an instance of com.google.gdata.data.contacts.ContactEntry representing the contact's updated state</td>
              </tr>
          </table>
@@ -1095,8 +1095,8 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                 
                     <tr>
                         <td><nobr>&lt;google-contacts:operations&gt;</nobr></td>
-                        <td></td>
-                        <td>A list with instances of org.mule.api.NestedProcessor representing the operations to be performed in the batch</td>
+                        <td>#[payload:]</td>
+                        <td><i>Optional.&nbsp;</i>A list with instances of org.mule.api.NestedProcessor representing the operations to be performed in the batch</td>
                         <td>List&lt;NestedProcessor&gt;</td>
                     </tr>
                 
@@ -1202,7 +1202,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                         <td class="jd-linkcol"><nobr>entries</nobr></td>
                         <td class="jd-descrcol">#[payload:]</td>
                         <td class="jd-descrcol"><i>Optional.&nbsp;</i>A collection with instances of com.google.gdata.data.BaseEntry to be batch updated</td>
-                        <td class="jd-descrcol">Collection&lt;BaseEntry&lt;?&gt;&gt;</td>
+                        <td class="jd-descrcol">Collection&lt;<a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>&gt;</td>
                         <td class="jd-descrcol">*/*</td>
                         <td class="jd-descrcol"></td>
                     </tr>
@@ -1324,8 +1324,8 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                 
                     <tr>
                         <td><nobr>&lt;google-contacts:operations&gt;</nobr></td>
-                        <td></td>
-                        <td>A list with instances of org.mule.api.NestedProcessor representing the operations to be performed in the batch</td>
+                        <td>#[payload:]</td>
+                        <td><i>Optional.&nbsp;</i>A list with instances of org.mule.api.NestedProcessor representing the operations to be performed in the batch</td>
                         <td>List&lt;NestedProcessor&gt;</td>
                     </tr>
                 
@@ -1431,7 +1431,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                         <td class="jd-linkcol"><nobr>entries</nobr></td>
                         <td class="jd-descrcol">#[payload:]</td>
                         <td class="jd-descrcol"><i>Optional.&nbsp;</i>A collection with instances of com.google.gdata.data.BaseEntry to be batch inserted</td>
-                        <td class="jd-descrcol">Collection&lt;BaseEntry&lt;?&gt;&gt;</td>
+                        <td class="jd-descrcol">Collection&lt;<a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>&gt;</td>
                         <td class="jd-descrcol">*/*</td>
                         <td class="jd-descrcol"></td>
                     </tr>
@@ -1537,7 +1537,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                         <td class="jd-linkcol"><nobr>entries</nobr></td>
                         <td class="jd-descrcol">#[payload:]</td>
                         <td class="jd-descrcol"><i>Optional.&nbsp;</i>A collection with instances of com.google.gdata.data.BaseEntry to be batch updated</td>
-                        <td class="jd-descrcol">Collection&lt;BaseEntry&lt;?&gt;&gt;</td>
+                        <td class="jd-descrcol">Collection&lt;<a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>&gt;</td>
                         <td class="jd-descrcol">*/*</td>
                         <td class="jd-descrcol"></td>
                     </tr>
@@ -1615,7 +1615,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                         <td class="jd-linkcol"><nobr>group</nobr></td>
                         <td class="jd-descrcol">#[payload:]</td>
                         <td class="jd-descrcol"><i>Optional.&nbsp;</i>An instance of com.google.gdata.data.contacts.ContactGroupEntry representing the group to be inserted</td>
-                        <td class="jd-descrcol">ContactGroupEntry</td>
+                        <td class="jd-descrcol"><a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a></td>
                         <td class="jd-descrcol">*/*</td>
                         <td class="jd-descrcol"></td>
                     </tr>
@@ -1646,7 +1646,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                 <th>Description</th>
              </tr>
              <tr>
-                <td class="jd-descrcol">ContactGroupEntry</td>
+                <td class="jd-descrcol"><a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a></td>
                 <td class="jd-descrcol">an instance of com.google.gdata.data.contacts.ContactGroupEntry representing the newly created group</td>
              </tr>
          </table>
@@ -1710,7 +1710,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                         <td class="jd-linkcol"><nobr>entry</nobr></td>
                         <td class="jd-descrcol">#[payload:]</td>
                         <td class="jd-descrcol"><i>Optional.&nbsp;</i>The contact to be deleted</td>
-                        <td class="jd-descrcol">ContactEntry</td>
+                        <td class="jd-descrcol"><a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></td>
                         <td class="jd-descrcol">*/*</td>
                         <td class="jd-descrcol"></td>
                     </tr>
@@ -1873,7 +1873,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                         <td class="jd-linkcol"><nobr>contact</nobr></td>
                         <td class="jd-descrcol">#[payload:]</td>
                         <td class="jd-descrcol"><i>Optional.&nbsp;</i>An instance of com.google.gdata.data.contacts.ContactEntry representing the contact whose photo we want deleted</td>
-                        <td class="jd-descrcol">ContactEntry</td>
+                        <td class="jd-descrcol"><a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></td>
                         <td class="jd-descrcol">*/*</td>
                         <td class="jd-descrcol"></td>
                     </tr>
@@ -2037,7 +2037,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                         <td class="jd-linkcol"><nobr>group</nobr></td>
                         <td class="jd-descrcol">#[payload:]</td>
                         <td class="jd-descrcol"><i>Optional.&nbsp;</i>An instance of com.google.gdata.data.contacts.ContactGroupEntry representing the group to be deleted</td>
-                        <td class="jd-descrcol">ContactGroupEntry</td>
+                        <td class="jd-descrcol"><a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a></td>
                         <td class="jd-descrcol">*/*</td>
                         <td class="jd-descrcol"></td>
                     </tr>
@@ -2200,7 +2200,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                         <td class="jd-linkcol"><nobr>contact</nobr></td>
                         <td class="jd-descrcol">#[payload:]</td>
                         <td class="jd-descrcol"><i>Optional.&nbsp;</i>The contact whose photo we want</td>
-                        <td class="jd-descrcol">ContactEntry</td>
+                        <td class="jd-descrcol"><a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></td>
                         <td class="jd-descrcol">*/*</td>
                         <td class="jd-descrcol"></td>
                     </tr>
@@ -2421,7 +2421,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                 <th>Description</th>
              </tr>
              <tr>
-                <td class="jd-descrcol">ContactEntry</td>
+                <td class="jd-descrcol"><a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></td>
                 <td class="jd-descrcol">an instance of com.google.gdata.data.contacts.ContactEntry</td>
              </tr>
          </table>
@@ -2628,7 +2628,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                 <th>Description</th>
              </tr>
              <tr>
-                <td class="jd-descrcol">List&lt;ContactEntry&gt;</td>
+                <td class="jd-descrcol">List&lt;<a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>&gt;</td>
                 <td class="jd-descrcol">a list with instances of com.google.gdata.data.contacts.ContactEntry</td>
              </tr>
          </table>
@@ -2723,7 +2723,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                 <th>Description</th>
              </tr>
              <tr>
-                <td class="jd-descrcol">ContactGroupEntry</td>
+                <td class="jd-descrcol"><a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a></td>
                 <td class="jd-descrcol">an instance of com.google.gdata.data.contacts.ContactGroupEntry</td>
              </tr>
          </table>
@@ -2818,7 +2818,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                 <th>Description</th>
              </tr>
              <tr>
-                <td class="jd-descrcol">ContactGroupEntry</td>
+                <td class="jd-descrcol"><a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a></td>
                 <td class="jd-descrcol">an instance of com.google.gdata.data.contacts.ContactGroupEntry or <code>null</code> if the group doesn't exist</td>
              </tr>
          </table>
@@ -2939,7 +2939,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                 <th>Description</th>
              </tr>
              <tr>
-                <td class="jd-descrcol">List&lt;ContactGroupEntry&gt;</td>
+                <td class="jd-descrcol">List&lt;<a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a>&gt;</td>
                 <td class="jd-descrcol">a list with instances of com.google.gdata.data.contacts.ContactGroupEntry</td>
              </tr>
          </table>
@@ -3003,7 +3003,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                         <td class="jd-linkcol"><nobr>contact</nobr></td>
                         <td class="jd-descrcol">#[payload:]</td>
                         <td class="jd-descrcol"><i>Optional.&nbsp;</i>An instance of com.google.gdata.data.contacts.ContactEntry representing the contact to be inserted</td>
-                        <td class="jd-descrcol">ContactEntry</td>
+                        <td class="jd-descrcol"><a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></td>
                         <td class="jd-descrcol">*/*</td>
                         <td class="jd-descrcol"></td>
                     </tr>
@@ -3034,7 +3034,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                 <th>Description</th>
              </tr>
              <tr>
-                <td class="jd-descrcol">ContactEntry</td>
+                <td class="jd-descrcol"><a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></td>
                 <td class="jd-descrcol">an instance of com.google.gdata.data.contacts.ContactEntry representing the newly inserted contact</td>
              </tr>
          </table>
@@ -3098,7 +3098,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                         <td class="jd-linkcol"><nobr>contact</nobr></td>
                         <td class="jd-descrcol">#[payload:]</td>
                         <td class="jd-descrcol"><i>Optional.&nbsp;</i>An instance of com.google.gdata.data.contacts.ContactEntry representing the contact to be updated</td>
-                        <td class="jd-descrcol">ContactEntry</td>
+                        <td class="jd-descrcol"><a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></td>
                         <td class="jd-descrcol">*/*</td>
                         <td class="jd-descrcol"></td>
                     </tr>
@@ -3129,7 +3129,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                 <th>Description</th>
              </tr>
              <tr>
-                <td class="jd-descrcol">ContactEntry</td>
+                <td class="jd-descrcol"><a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></td>
                 <td class="jd-descrcol">an instance of com.google.gdata.data.contacts.ContactEntry representing the contact's updated state</td>
              </tr>
          </table>
@@ -3287,7 +3287,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                         <td class="jd-linkcol"><nobr>group</nobr></td>
                         <td class="jd-descrcol">#[payload:]</td>
                         <td class="jd-descrcol"><i>Optional.&nbsp;</i>An instance of com.google.gdata.data.contacts.ContactGroupEntry with the group's new state</td>
-                        <td class="jd-descrcol">ContactGroupEntry</td>
+                        <td class="jd-descrcol"><a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a></td>
                         <td class="jd-descrcol">*/*</td>
                         <td class="jd-descrcol"></td>
                     </tr>
@@ -3318,7 +3318,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                 <th>Description</th>
              </tr>
              <tr>
-                <td class="jd-descrcol">ContactGroupEntry</td>
+                <td class="jd-descrcol"><a href="../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a></td>
                 <td class="jd-descrcol">an instance of com.google.gdata.data.contacts.ContactGroupEntry reflecting the group's updated state</td>
              </tr>
          </table>

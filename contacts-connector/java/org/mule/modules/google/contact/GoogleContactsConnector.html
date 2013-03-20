@@ -211,17 +211,29 @@
     <li class="selected api apilevel-">
   <a href="../../../../../../java/org/mule/modules/google/contact/package-summary.html">org.mule.modules.google.contact</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../java/org/mule/modules/google/contact/adapter/package-summary.html">org.mule.modules.google.contact.adapter</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../java/org/mule/modules/google/contact/adapters/package-summary.html">org.mule.modules.google.contact.adapters</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../java/org/mule/modules/google/contact/agents/package-summary.html">org.mule.modules.google.contact.agents</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../java/org/mule/modules/google/contact/basic/package-summary.html">org.mule.modules.google.contact.basic</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../java/org/mule/modules/google/contact/callback/package-summary.html">org.mule.modules.google.contact.callback</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../java/org/mule/modules/google/contact/config/package-summary.html">org.mule.modules.google.contact.config</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../java/org/mule/modules/google/contact/connection/package-summary.html">org.mule.modules.google.contact.connection</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../java/org/mule/modules/google/contact/devkit/package-summary.html">org.mule.modules.google.contact.devkit</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../java/org/mule/modules/google/contact/oauth/package-summary.html">org.mule.modules.google.contact.oauth</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../java/org/mule/modules/google/contact/process/package-summary.html">org.mule.modules.google.contact.process</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../java/org/mule/modules/google/contact/processors/package-summary.html">org.mule.modules.google.contact.processors</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../java/org/mule/modules/google/contact/wrappers/package-summary.html">org.mule.modules.google.contact.wrappers</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../java/org/mule/modules/google/transformers/package-summary.html">org.mule.modules.google.transformers</a></li>
               </ul><br/>
@@ -870,10 +882,10 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
             
             
             
-            ContactEntry</nobr>
+            <a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#addGroup(com.google.gdata.data.contacts.ContactEntry, java.lang.String)">addGroup</a></span>(ContactEntry contact, String groupId)</nobr>
+        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#addGroup(org.mule.modules.google.contact.wrappers.GoogleContactEntry, java.lang.String)">addGroup</a></span>(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> contact, String groupId)</nobr>
         
         <div class="jd-descrdiv">Adds a group to a given contact
  
@@ -913,7 +925,7 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#batchDelete(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<com.google.gdata.data.BaseEntry<?>>)">batchDelete</a></span>(MuleMessage message, String operationId, Collection&lt;BaseEntry&lt;?&gt;&gt; entries)</nobr>
+        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#batchDelete(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<org.mule.modules.google.contact.wrappers.GoogleContactEntry>)">batchDelete</a></span>(MuleMessage message, String operationId, Collection&lt;<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>&gt; entries)</nobr>
         
         <div class="jd-descrdiv">The function of this sub processor is to add updated operations into the current batch for the given entries
  
@@ -952,7 +964,7 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#batchInsert(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<com.google.gdata.data.BaseEntry<?>>)">batchInsert</a></span>(MuleMessage message, String operationId, Collection&lt;BaseEntry&lt;?&gt;&gt; entries)</nobr>
+        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#batchInsert(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<org.mule.modules.google.contact.wrappers.GoogleContactEntry>)">batchInsert</a></span>(MuleMessage message, String operationId, Collection&lt;<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>&gt; entries)</nobr>
         
         <div class="jd-descrdiv">The function of this sub processor is to add insert operations into the current batch for the given entries
  
@@ -973,7 +985,7 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#batchUpdate(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<com.google.gdata.data.BaseEntry<?>>)">batchUpdate</a></span>(MuleMessage message, String operationId, Collection&lt;BaseEntry&lt;?&gt;&gt; entries)</nobr>
+        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#batchUpdate(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<org.mule.modules.google.contact.wrappers.GoogleContactEntry>)">batchUpdate</a></span>(MuleMessage message, String operationId, Collection&lt;<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>&gt; entries)</nobr>
         
         <div class="jd-descrdiv">The function of this sub processor is to add updated operations into the current batch for the given entries
  
@@ -991,10 +1003,10 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
             
             
             
-            ContactGroupEntry</nobr>
+            <a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#createGroup(com.google.gdata.data.contacts.ContactGroupEntry)">createGroup</a></span>(ContactGroupEntry group)</nobr>
+        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#createGroup(org.mule.modules.google.contact.wrappers.GoogleContactGroupEntry)">createGroup</a></span>(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a> group)</nobr>
         
         <div class="jd-descrdiv">Inserts a new group
  
@@ -1014,7 +1026,7 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#deleteContact(com.google.gdata.data.contacts.ContactEntry)">deleteContact</a></span>(ContactEntry entry)</nobr>
+        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#deleteContact(org.mule.modules.google.contact.wrappers.GoogleContactEntry)">deleteContact</a></span>(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> entry)</nobr>
         
         <div class="jd-descrdiv">Deletes a given contact
  
@@ -1053,7 +1065,7 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#deleteContactPhoto(com.google.gdata.data.contacts.ContactEntry)">deleteContactPhoto</a></span>(ContactEntry contact)</nobr>
+        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#deleteContactPhoto(org.mule.modules.google.contact.wrappers.GoogleContactEntry)">deleteContactPhoto</a></span>(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> contact)</nobr>
         
         <div class="jd-descrdiv">Deletes the photo associated to a given contact
  
@@ -1093,7 +1105,7 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#deleteGroup(com.google.gdata.data.contacts.ContactGroupEntry)">deleteGroup</a></span>(ContactGroupEntry group)</nobr>
+        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#deleteGroup(org.mule.modules.google.contact.wrappers.GoogleContactGroupEntry)">deleteGroup</a></span>(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a> group)</nobr>
         
         <div class="jd-descrdiv">Deletes the given group
  
@@ -1133,7 +1145,7 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
             InputStream</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#downloadPhoto(com.google.gdata.data.contacts.ContactEntry)">downloadPhoto</a></span>(ContactEntry contact)</nobr>
+        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#downloadPhoto(org.mule.modules.google.contact.wrappers.GoogleContactEntry)">downloadPhoto</a></span>(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> contact)</nobr>
         
         <div class="jd-descrdiv">Downloads the photo of a given contact
  </div>
@@ -1249,7 +1261,7 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
             
             
             
-            ContactEntry</nobr>
+            <a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#getContactById(java.lang.String)">getContactById</a></span>(String id)</nobr>
@@ -1269,7 +1281,7 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
             
             
             
-            List&lt;ContactEntry&gt;</nobr>
+            List&lt;<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>&gt;</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#getContacts(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, com.google.gdata.client.contacts.ContactQuery.SortOrder, java.lang.Boolean, com.google.gdata.client.contacts.ContactQuery.OrderBy, java.lang.String)">getContacts</a></span>(String updatedMin, String updatedMax, String datetimeFormat, String fullTextQuery, int maxResults, int firstResult, ContactQuery.SortOrder sortOrder, Boolean showDeleted, ContactQuery.OrderBy orderBy, String groupId)</nobr>
@@ -1287,7 +1299,7 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
             
             
             
-            ContactGroupEntry</nobr>
+            <a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#getGroupById(java.lang.String)">getGroupById</a></span>(String id)</nobr>
@@ -1307,7 +1319,7 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
             
             
             
-            ContactGroupEntry</nobr>
+            <a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#getGroupByName(java.lang.String)">getGroupByName</a></span>(String groupName)</nobr>
@@ -1327,7 +1339,7 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
             
             
             
-            List&lt;ContactGroupEntry&gt;</nobr>
+            List&lt;<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a>&gt;</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#getGroups(java.lang.String, java.lang.String, java.lang.String)">getGroups</a></span>(String updatedMin, String updatedMax, String datetimeFormat)</nobr>
@@ -1379,10 +1391,10 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
             
             
             
-            ContactEntry</nobr>
+            <a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#insertContact(com.google.gdata.data.contacts.ContactEntry)">insertContact</a></span>(ContactEntry contact)</nobr>
+        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#insertContact(org.mule.modules.google.contact.wrappers.GoogleContactEntry)">insertContact</a></span>(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> contact)</nobr>
         
         <div class="jd-descrdiv">Inserts a new contact
  
@@ -1527,10 +1539,10 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
             
             
             
-            ContactEntry</nobr>
+            <a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#updateContact(com.google.gdata.data.contacts.ContactEntry)">updateContact</a></span>(ContactEntry contact)</nobr>
+        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#updateContact(org.mule.modules.google.contact.wrappers.GoogleContactEntry)">updateContact</a></span>(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> contact)</nobr>
         
         <div class="jd-descrdiv">Updates a contact entry
 
@@ -1567,10 +1579,10 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
             
             
             
-            ContactGroupEntry</nobr>
+            <a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#updateGroup(com.google.gdata.data.contacts.ContactGroupEntry)">updateGroup</a></span>(ContactGroupEntry group)</nobr>
+        <span class="sympad"><a href="../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#updateGroup(org.mule.modules.google.contact.wrappers.GoogleContactGroupEntry)">updateGroup</a></span>(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a> group)</nobr>
         
         <div class="jd-descrdiv">Updates the state of a group
  
@@ -2568,7 +2580,7 @@ From class
 
 
 
-<A NAME="addGroup(com.google.gdata.data.contacts.ContactEntry, java.lang.String)"></A>
+<A NAME="addGroup(org.mule.modules.google.contact.wrappers.GoogleContactEntry, java.lang.String)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -2578,10 +2590,10 @@ From class
          
          
          
-        ContactEntry
+        <a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>
       </span>
       <span class="sympad">addGroup</span>
-      <span class="normal">(ContactEntry contact, String groupId)</span>
+      <span class="normal">(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> contact, String groupId)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -2692,7 +2704,7 @@ From class
 </div>
 
 
-<A NAME="batchDelete(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<com.google.gdata.data.BaseEntry<?>>)"></A>
+<A NAME="batchDelete(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<org.mule.modules.google.contact.wrappers.GoogleContactEntry>)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -2705,7 +2717,7 @@ From class
         void
       </span>
       <span class="sympad">batchDelete</span>
-      <span class="normal">(MuleMessage message, String operationId, Collection&lt;BaseEntry&lt;?&gt;&gt; entries)</span>
+      <span class="normal">(MuleMessage message, String operationId, Collection&lt;<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>&gt; entries)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -2821,7 +2833,7 @@ From class
 </div>
 
 
-<A NAME="batchInsert(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<com.google.gdata.data.BaseEntry<?>>)"></A>
+<A NAME="batchInsert(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<org.mule.modules.google.contact.wrappers.GoogleContactEntry>)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -2834,7 +2846,7 @@ From class
         void
       </span>
       <span class="sympad">batchInsert</span>
-      <span class="normal">(MuleMessage message, String operationId, Collection&lt;BaseEntry&lt;?&gt;&gt; entries)</span>
+      <span class="normal">(MuleMessage message, String operationId, Collection&lt;<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>&gt; entries)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -2885,7 +2897,7 @@ From class
 </div>
 
 
-<A NAME="batchUpdate(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<com.google.gdata.data.BaseEntry<?>>)"></A>
+<A NAME="batchUpdate(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<org.mule.modules.google.contact.wrappers.GoogleContactEntry>)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -2898,7 +2910,7 @@ From class
         void
       </span>
       <span class="sympad">batchUpdate</span>
-      <span class="normal">(MuleMessage message, String operationId, Collection&lt;BaseEntry&lt;?&gt;&gt; entries)</span>
+      <span class="normal">(MuleMessage message, String operationId, Collection&lt;<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>&gt; entries)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -2949,7 +2961,7 @@ From class
 </div>
 
 
-<A NAME="createGroup(com.google.gdata.data.contacts.ContactGroupEntry)"></A>
+<A NAME="createGroup(org.mule.modules.google.contact.wrappers.GoogleContactGroupEntry)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -2959,10 +2971,10 @@ From class
          
          
          
-        ContactGroupEntry
+        <a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a>
       </span>
       <span class="sympad">createGroup</span>
-      <span class="normal">(ContactGroupEntry group)</span>
+      <span class="normal">(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a> group)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -3009,7 +3021,7 @@ From class
 </div>
 
 
-<A NAME="deleteContact(com.google.gdata.data.contacts.ContactEntry)"></A>
+<A NAME="deleteContact(org.mule.modules.google.contact.wrappers.GoogleContactEntry)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -3022,7 +3034,7 @@ From class
         void
       </span>
       <span class="sympad">deleteContact</span>
-      <span class="normal">(ContactEntry entry)</span>
+      <span class="normal">(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> entry)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -3120,7 +3132,7 @@ From class
 </div>
 
 
-<A NAME="deleteContactPhoto(com.google.gdata.data.contacts.ContactEntry)"></A>
+<A NAME="deleteContactPhoto(org.mule.modules.google.contact.wrappers.GoogleContactEntry)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -3133,7 +3145,7 @@ From class
         void
       </span>
       <span class="sympad">deleteContactPhoto</span>
-      <span class="normal">(ContactEntry contact)</span>
+      <span class="normal">(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> contact)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -3232,7 +3244,7 @@ From class
 </div>
 
 
-<A NAME="deleteGroup(com.google.gdata.data.contacts.ContactGroupEntry)"></A>
+<A NAME="deleteGroup(org.mule.modules.google.contact.wrappers.GoogleContactGroupEntry)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -3245,7 +3257,7 @@ From class
         void
       </span>
       <span class="sympad">deleteGroup</span>
-      <span class="normal">(ContactGroupEntry group)</span>
+      <span class="normal">(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a> group)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -3344,7 +3356,7 @@ From class
 </div>
 
 
-<A NAME="downloadPhoto(com.google.gdata.data.contacts.ContactEntry)"></A>
+<A NAME="downloadPhoto(org.mule.modules.google.contact.wrappers.GoogleContactEntry)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -3357,7 +3369,7 @@ From class
         InputStream
       </span>
       <span class="sympad">downloadPhoto</span>
-      <span class="normal">(ContactEntry contact)</span>
+      <span class="normal">(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> contact)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -3628,7 +3640,7 @@ From class
          
          
          
-        ContactEntry
+        <a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>
       </span>
       <span class="sympad">getContactById</span>
       <span class="normal">(String id)</span>
@@ -3688,7 +3700,7 @@ From class
          
          
          
-        List&lt;ContactEntry&gt;
+        List&lt;<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>&gt;
       </span>
       <span class="sympad">getContacts</span>
       <span class="normal">(String updatedMin, String updatedMax, String datetimeFormat, String fullTextQuery, int maxResults, int firstResult, ContactQuery.SortOrder sortOrder, Boolean showDeleted, ContactQuery.OrderBy orderBy, String groupId)</span>
@@ -3788,7 +3800,7 @@ From class
          
          
          
-        ContactGroupEntry
+        <a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a>
       </span>
       <span class="sympad">getGroupById</span>
       <span class="normal">(String id)</span>
@@ -3848,7 +3860,7 @@ From class
          
          
          
-        ContactGroupEntry
+        <a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a>
       </span>
       <span class="sympad">getGroupByName</span>
       <span class="normal">(String groupName)</span>
@@ -3908,7 +3920,7 @@ From class
          
          
          
-        List&lt;ContactGroupEntry&gt;
+        List&lt;<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a>&gt;
       </span>
       <span class="sympad">getGroups</span>
       <span class="normal">(String updatedMin, String updatedMax, String datetimeFormat)</span>
@@ -4030,7 +4042,7 @@ From class
 </div>
 
 
-<A NAME="insertContact(com.google.gdata.data.contacts.ContactEntry)"></A>
+<A NAME="insertContact(org.mule.modules.google.contact.wrappers.GoogleContactEntry)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -4040,10 +4052,10 @@ From class
          
          
          
-        ContactEntry
+        <a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>
       </span>
       <span class="sympad">insertContact</span>
-      <span class="normal">(ContactEntry contact)</span>
+      <span class="normal">(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> contact)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -4401,7 +4413,7 @@ From class
 </div>
 
 
-<A NAME="updateContact(com.google.gdata.data.contacts.ContactEntry)"></A>
+<A NAME="updateContact(org.mule.modules.google.contact.wrappers.GoogleContactEntry)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -4411,10 +4423,10 @@ From class
          
          
          
-        ContactEntry
+        <a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>
       </span>
       <span class="sympad">updateContact</span>
-      <span class="normal">(ContactEntry contact)</span>
+      <span class="normal">(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> contact)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -4521,7 +4533,7 @@ From class
 </div>
 
 
-<A NAME="updateGroup(com.google.gdata.data.contacts.ContactGroupEntry)"></A>
+<A NAME="updateGroup(org.mule.modules.google.contact.wrappers.GoogleContactGroupEntry)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -4531,10 +4543,10 @@ From class
          
          
          
-        ContactGroupEntry
+        <a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a>
       </span>
       <span class="sympad">updateGroup</span>
-      <span class="normal">(ContactGroupEntry group)</span>
+      <span class="normal">(<a href="../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a> group)</span>
     </h4>
       <div class="api-level">
         <div>

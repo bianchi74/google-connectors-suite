@@ -210,18 +210,30 @@
   <a href="../../../../../../../java/org/mule/api/holders/package-summary.html">org.mule.api.holders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/contact/package-summary.html">org.mule.modules.google.contact</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/modules/google/contact/adapter/package-summary.html">org.mule.modules.google.contact.adapter</a></li>
     <li class="selected api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/contact/adapters/package-summary.html">org.mule.modules.google.contact.adapters</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/contact/agents/package-summary.html">org.mule.modules.google.contact.agents</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/modules/google/contact/basic/package-summary.html">org.mule.modules.google.contact.basic</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/modules/google/contact/callback/package-summary.html">org.mule.modules.google.contact.callback</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/contact/config/package-summary.html">org.mule.modules.google.contact.config</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/modules/google/contact/connection/package-summary.html">org.mule.modules.google.contact.connection</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/modules/google/contact/devkit/package-summary.html">org.mule.modules.google.contact.devkit</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/contact/oauth/package-summary.html">org.mule.modules.google.contact.oauth</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/contact/process/package-summary.html">org.mule.modules.google.contact.process</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/contact/processors/package-summary.html">org.mule.modules.google.contact.processors</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/package-summary.html">org.mule.modules.google.contact.wrappers</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/transformers/package-summary.html">org.mule.modules.google.transformers</a></li>
               </ul><br/>
@@ -331,20 +343,6 @@
    
   
   
-  
-  
-
-  
-   
-  
-  
-  
-  
-
-  
-   
-  
-  
    
   
   
@@ -373,6 +371,20 @@
   
   
    
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+  
+   
+  
   
   
   
@@ -825,10 +837,6 @@ org.mule.modules.google.AbstractGoogleOAuthConnector
 
 
 
-
-
-
-
 <tr class="api apilevel-" >
 <td colspan="12">
 
@@ -950,6 +958,10 @@ org.mule.api.lifecycle.Stoppable
   </div>
 </div>
 </td></tr>
+
+
+
+
 
 
 </table>
@@ -1322,6 +1334,9 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/adapters/GoogleContactsConnectorMetadataAdapater.html#getDevkitBuild()">getDevkitBuild</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Returns the build of the DevKit used to create this module
+</div>
+  
   </td></tr>
 
 
@@ -1338,6 +1353,9 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/adapters/GoogleContactsConnectorMetadataAdapater.html#getDevkitVersion()">getDevkitVersion</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Returns the version of the DevKit used to create this module
+</div>
+  
   </td></tr>
 
 
@@ -1354,6 +1372,9 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/adapters/GoogleContactsConnectorMetadataAdapater.html#getModuleName()">getModuleName</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Returns the user-friendly name of this module
+</div>
+  
   </td></tr>
 
 
@@ -1370,6 +1391,9 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/adapters/GoogleContactsConnectorMetadataAdapater.html#getModuleVersion()">getModuleVersion</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Returns the version of this module
+</div>
+  
   </td></tr>
 
 
@@ -1410,7 +1434,7 @@ From class
             boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/adapters/GoogleContactsConnectorCapabilitiesAdapter.html#isCapableOf(org.mule.api.Capability)">isCapableOf</a></span>(Capability capability)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/adapters/GoogleContactsConnectorCapabilitiesAdapter.html#isCapableOf(org.mule.modules.google.contact.basic.Capability)">isCapableOf</a></span>(<a href="../../../../../../../java/org/mule/modules/google/contact/basic/Capability.html">Capability</a> capability)</nobr>
         
         <div class="jd-descrdiv">Returns true if this module implements such capability
  
@@ -1453,10 +1477,10 @@ From class
             
             
             
-            ContactEntry</nobr>
+            <a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#addGroup(com.google.gdata.data.contacts.ContactEntry, java.lang.String)">addGroup</a></span>(ContactEntry contact, String groupId)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#addGroup(org.mule.modules.google.contact.wrappers.GoogleContactEntry, java.lang.String)">addGroup</a></span>(<a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> contact, String groupId)</nobr>
         
         <div class="jd-descrdiv">Adds a group to a given contact
  
@@ -1496,7 +1520,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#batchDelete(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<com.google.gdata.data.BaseEntry<?>>)">batchDelete</a></span>(MuleMessage message, String operationId, Collection&lt;BaseEntry&lt;?&gt;&gt; entries)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#batchDelete(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<org.mule.modules.google.contact.wrappers.GoogleContactEntry>)">batchDelete</a></span>(MuleMessage message, String operationId, Collection&lt;<a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>&gt; entries)</nobr>
         
         <div class="jd-descrdiv">The function of this sub processor is to add updated operations into the current batch for the given entries
  
@@ -1535,7 +1559,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#batchInsert(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<com.google.gdata.data.BaseEntry<?>>)">batchInsert</a></span>(MuleMessage message, String operationId, Collection&lt;BaseEntry&lt;?&gt;&gt; entries)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#batchInsert(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<org.mule.modules.google.contact.wrappers.GoogleContactEntry>)">batchInsert</a></span>(MuleMessage message, String operationId, Collection&lt;<a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>&gt; entries)</nobr>
         
         <div class="jd-descrdiv">The function of this sub processor is to add insert operations into the current batch for the given entries
  
@@ -1556,7 +1580,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#batchUpdate(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<com.google.gdata.data.BaseEntry<?>>)">batchUpdate</a></span>(MuleMessage message, String operationId, Collection&lt;BaseEntry&lt;?&gt;&gt; entries)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#batchUpdate(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<org.mule.modules.google.contact.wrappers.GoogleContactEntry>)">batchUpdate</a></span>(MuleMessage message, String operationId, Collection&lt;<a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>&gt; entries)</nobr>
         
         <div class="jd-descrdiv">The function of this sub processor is to add updated operations into the current batch for the given entries
  
@@ -1574,10 +1598,10 @@ From class
             
             
             
-            ContactGroupEntry</nobr>
+            <a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#createGroup(com.google.gdata.data.contacts.ContactGroupEntry)">createGroup</a></span>(ContactGroupEntry group)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#createGroup(org.mule.modules.google.contact.wrappers.GoogleContactGroupEntry)">createGroup</a></span>(<a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a> group)</nobr>
         
         <div class="jd-descrdiv">Inserts a new group
  
@@ -1597,7 +1621,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#deleteContact(com.google.gdata.data.contacts.ContactEntry)">deleteContact</a></span>(ContactEntry entry)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#deleteContact(org.mule.modules.google.contact.wrappers.GoogleContactEntry)">deleteContact</a></span>(<a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> entry)</nobr>
         
         <div class="jd-descrdiv">Deletes a given contact
  
@@ -1636,7 +1660,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#deleteContactPhoto(com.google.gdata.data.contacts.ContactEntry)">deleteContactPhoto</a></span>(ContactEntry contact)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#deleteContactPhoto(org.mule.modules.google.contact.wrappers.GoogleContactEntry)">deleteContactPhoto</a></span>(<a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> contact)</nobr>
         
         <div class="jd-descrdiv">Deletes the photo associated to a given contact
  
@@ -1676,7 +1700,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#deleteGroup(com.google.gdata.data.contacts.ContactGroupEntry)">deleteGroup</a></span>(ContactGroupEntry group)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#deleteGroup(org.mule.modules.google.contact.wrappers.GoogleContactGroupEntry)">deleteGroup</a></span>(<a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a> group)</nobr>
         
         <div class="jd-descrdiv">Deletes the given group
  
@@ -1716,7 +1740,7 @@ From class
             InputStream</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#downloadPhoto(com.google.gdata.data.contacts.ContactEntry)">downloadPhoto</a></span>(ContactEntry contact)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#downloadPhoto(org.mule.modules.google.contact.wrappers.GoogleContactEntry)">downloadPhoto</a></span>(<a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> contact)</nobr>
         
         <div class="jd-descrdiv">Downloads the photo of a given contact
  </div>
@@ -1832,7 +1856,7 @@ From class
             
             
             
-            ContactEntry</nobr>
+            <a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#getContactById(java.lang.String)">getContactById</a></span>(String id)</nobr>
@@ -1852,7 +1876,7 @@ From class
             
             
             
-            List&lt;ContactEntry&gt;</nobr>
+            List&lt;<a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a>&gt;</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#getContacts(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, com.google.gdata.client.contacts.ContactQuery.SortOrder, java.lang.Boolean, com.google.gdata.client.contacts.ContactQuery.OrderBy, java.lang.String)">getContacts</a></span>(String updatedMin, String updatedMax, String datetimeFormat, String fullTextQuery, int maxResults, int firstResult, ContactQuery.SortOrder sortOrder, Boolean showDeleted, ContactQuery.OrderBy orderBy, String groupId)</nobr>
@@ -1870,7 +1894,7 @@ From class
             
             
             
-            ContactGroupEntry</nobr>
+            <a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#getGroupById(java.lang.String)">getGroupById</a></span>(String id)</nobr>
@@ -1890,7 +1914,7 @@ From class
             
             
             
-            ContactGroupEntry</nobr>
+            <a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#getGroupByName(java.lang.String)">getGroupByName</a></span>(String groupName)</nobr>
@@ -1910,7 +1934,7 @@ From class
             
             
             
-            List&lt;ContactGroupEntry&gt;</nobr>
+            List&lt;<a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a>&gt;</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#getGroups(java.lang.String, java.lang.String, java.lang.String)">getGroups</a></span>(String updatedMin, String updatedMax, String datetimeFormat)</nobr>
@@ -1978,10 +2002,10 @@ From class
             
             
             
-            ContactEntry</nobr>
+            <a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#insertContact(com.google.gdata.data.contacts.ContactEntry)">insertContact</a></span>(ContactEntry contact)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#insertContact(org.mule.modules.google.contact.wrappers.GoogleContactEntry)">insertContact</a></span>(<a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> contact)</nobr>
         
         <div class="jd-descrdiv">Inserts a new contact
  
@@ -2126,10 +2150,10 @@ From class
             
             
             
-            ContactEntry</nobr>
+            <a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#updateContact(com.google.gdata.data.contacts.ContactEntry)">updateContact</a></span>(ContactEntry contact)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#updateContact(org.mule.modules.google.contact.wrappers.GoogleContactEntry)">updateContact</a></span>(<a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactEntry.html">GoogleContactEntry</a> contact)</nobr>
         
         <div class="jd-descrdiv">Updates a contact entry
 
@@ -2166,10 +2190,10 @@ From class
             
             
             
-            ContactGroupEntry</nobr>
+            <a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#updateGroup(com.google.gdata.data.contacts.ContactGroupEntry)">updateGroup</a></span>(ContactGroupEntry group)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/GoogleContactsConnector.html#updateGroup(org.mule.modules.google.contact.wrappers.GoogleContactGroupEntry)">updateGroup</a></span>(<a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/GoogleContactGroupEntry.html">GoogleContactGroupEntry</a> group)</nobr>
         
         <div class="jd-descrdiv">Updates the state of a group
  
@@ -2463,138 +2487,6 @@ From class
 
 <tr class="api apilevel-" >
 <td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-org.mule.api.Capabilities" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-org.mule.api.Capabilities-trigger"
-          src="../../../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From interface
-
-  org.mule.api.Capabilities
-
-<div id="inherited-methods-org.mule.api.Capabilities">
-  <div id="inherited-methods-org.mule.api.Capabilities-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-org.mule.api.Capabilities-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            boolean</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">isCapableOf</span>(Capability arg0)</nobr>
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-org.mule.api.MetadataAware" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-org.mule.api.MetadataAware-trigger"
-          src="../../../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From interface
-
-  org.mule.api.MetadataAware
-
-<div id="inherited-methods-org.mule.api.MetadataAware">
-  <div id="inherited-methods-org.mule.api.MetadataAware-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-org.mule.api.MetadataAware-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getDevkitBuild</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getDevkitVersion</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getModuleName</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getModuleVersion</span>()</nobr>
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
   <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-org.mule.api.lifecycle.Disposable" class="jd-expando-trigger closed"
           ><img id="inherited-methods-org.mule.api.lifecycle.Disposable-trigger"
           src="../../../../../../../assets/images/triangle-closed.png"
@@ -2751,6 +2643,153 @@ From interface
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad">stop</span>()</nobr>
         
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-org.mule.modules.google.contact.basic.Capabilities" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-org.mule.modules.google.contact.basic.Capabilities-trigger"
+          src="../../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="../../../../../../../org/mule/modules/google/contact/basic/Capabilities.html">org.mule.modules.google.contact.basic.Capabilities</a>
+
+<div id="inherited-methods-org.mule.modules.google.contact.basic.Capabilities">
+  <div id="inherited-methods-org.mule.modules.google.contact.basic.Capabilities-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-org.mule.modules.google.contact.basic.Capabilities-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/basic/Capabilities.html#isCapableOf(org.mule.modules.google.contact.basic.Capability)">isCapableOf</a></span>(<a href="../../../../../../../java/org/mule/modules/google/contact/basic/Capability.html">Capability</a> capability)</nobr>
+        
+        <div class="jd-descrdiv">Returns true if this module implements such
+ capability</div>
+  
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-org.mule.modules.google.contact.basic.MetadataAware" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-org.mule.modules.google.contact.basic.MetadataAware-trigger"
+          src="../../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="../../../../../../../org/mule/modules/google/contact/basic/MetadataAware.html">org.mule.modules.google.contact.basic.MetadataAware</a>
+
+<div id="inherited-methods-org.mule.modules.google.contact.basic.MetadataAware">
+  <div id="inherited-methods-org.mule.modules.google.contact.basic.MetadataAware-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-org.mule.modules.google.contact.basic.MetadataAware-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/basic/MetadataAware.html#getDevkitBuild()">getDevkitBuild</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the build of the DevKit used to create this module
+</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/basic/MetadataAware.html#getDevkitVersion()">getDevkitVersion</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the version of the DevKit used to create this module
+</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/basic/MetadataAware.html#getModuleName()">getModuleName</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the user-friendly name of this module
+</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/modules/google/contact/basic/MetadataAware.html#getModuleVersion()">getModuleVersion</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the version of this module
+</div>
+  
   </td></tr>
 
 

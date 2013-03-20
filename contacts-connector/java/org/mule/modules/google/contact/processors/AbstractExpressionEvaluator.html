@@ -211,17 +211,29 @@
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/contact/package-summary.html">org.mule.modules.google.contact</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/modules/google/contact/adapter/package-summary.html">org.mule.modules.google.contact.adapter</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/contact/adapters/package-summary.html">org.mule.modules.google.contact.adapters</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/contact/agents/package-summary.html">org.mule.modules.google.contact.agents</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/modules/google/contact/basic/package-summary.html">org.mule.modules.google.contact.basic</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/modules/google/contact/callback/package-summary.html">org.mule.modules.google.contact.callback</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/contact/config/package-summary.html">org.mule.modules.google.contact.config</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/modules/google/contact/connection/package-summary.html">org.mule.modules.google.contact.connection</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/modules/google/contact/devkit/package-summary.html">org.mule.modules.google.contact.devkit</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/contact/oauth/package-summary.html">org.mule.modules.google.contact.oauth</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/contact/process/package-summary.html">org.mule.modules.google.contact.process</a></li>
     <li class="selected api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/contact/processors/package-summary.html">org.mule.modules.google.contact.processors</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/modules/google/contact/wrappers/package-summary.html">org.mule.modules.google.contact.wrappers</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/transformers/package-summary.html">org.mule.modules.google.transformers</a></li>
               </ul><br/>
@@ -556,7 +568,7 @@ Summary:
           </tr>
         <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/AddGroupMessageProcessor.html">AddGroupMessageProcessor</a></td>
-              <td class="jd-descrcol" width="100%">AddGroupMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#addGroup(com.google.gdata.data.contacts.ContactEntry, java.lang.String)">addGroup(com.google.gdata.data.contacts.ContactEntry, java.lang.String)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
+              <td class="jd-descrcol" width="100%">AddGroupMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#addGroup(org.mule.modules.google.contact.wrappers.GoogleContactEntry, java.lang.String)">addGroup(org.mule.modules.google.contact.wrappers.GoogleContactEntry, java.lang.String)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
           </tr>
         <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/AuthorizeMessageProcessor.html">AuthorizeMessageProcessor</a></td>
@@ -568,7 +580,7 @@ Summary:
           </tr>
         <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/BatchDeleteMessageProcessor.html">BatchDeleteMessageProcessor</a></td>
-              <td class="jd-descrcol" width="100%">BatchDeleteMessageProcessor invokes the org.mule.modules.google.contact.GoogleContactsConnector#batchDelete(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<com.google.gdata.data.BaseEntry<?>>) method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
+              <td class="jd-descrcol" width="100%">BatchDeleteMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#batchDelete(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<org.mule.modules.google.contact.wrappers.GoogleContactEntry>)">batchDelete(org.mule.api.MuleMessage, java.lang.String, java.util.Collection)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
           </tr>
         <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/BatchGroupsMessageProcessor.html">BatchGroupsMessageProcessor</a></td>
@@ -576,15 +588,15 @@ Summary:
           </tr>
         <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/BatchInsertMessageProcessor.html">BatchInsertMessageProcessor</a></td>
-              <td class="jd-descrcol" width="100%">BatchInsertMessageProcessor invokes the org.mule.modules.google.contact.GoogleContactsConnector#batchInsert(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<com.google.gdata.data.BaseEntry<?>>) method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
+              <td class="jd-descrcol" width="100%">BatchInsertMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#batchInsert(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<org.mule.modules.google.contact.wrappers.GoogleContactEntry>)">batchInsert(org.mule.api.MuleMessage, java.lang.String, java.util.Collection)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
           </tr>
         <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/BatchUpdateMessageProcessor.html">BatchUpdateMessageProcessor</a></td>
-              <td class="jd-descrcol" width="100%">BatchUpdateMessageProcessor invokes the org.mule.modules.google.contact.GoogleContactsConnector#batchUpdate(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<com.google.gdata.data.BaseEntry<?>>) method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
+              <td class="jd-descrcol" width="100%">BatchUpdateMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#batchUpdate(org.mule.api.MuleMessage, java.lang.String, java.util.Collection<org.mule.modules.google.contact.wrappers.GoogleContactEntry>)">batchUpdate(org.mule.api.MuleMessage, java.lang.String, java.util.Collection)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
           </tr>
         <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/CreateGroupMessageProcessor.html">CreateGroupMessageProcessor</a></td>
-              <td class="jd-descrcol" width="100%">CreateGroupMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#createGroup(com.google.gdata.data.contacts.ContactGroupEntry)">createGroup(com.google.gdata.data.contacts.ContactGroupEntry)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
+              <td class="jd-descrcol" width="100%">CreateGroupMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#createGroup(org.mule.modules.google.contact.wrappers.GoogleContactGroupEntry)">createGroup(org.mule.modules.google.contact.wrappers.GoogleContactGroupEntry)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
           </tr>
         <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/DeleteContactByIdMessageProcessor.html">DeleteContactByIdMessageProcessor</a></td>
@@ -592,7 +604,7 @@ Summary:
           </tr>
         <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/DeleteContactMessageProcessor.html">DeleteContactMessageProcessor</a></td>
-              <td class="jd-descrcol" width="100%">DeleteContactMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#deleteContact(com.google.gdata.data.contacts.ContactEntry)">deleteContact(com.google.gdata.data.contacts.ContactEntry)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
+              <td class="jd-descrcol" width="100%">DeleteContactMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#deleteContact(org.mule.modules.google.contact.wrappers.GoogleContactEntry)">deleteContact(org.mule.modules.google.contact.wrappers.GoogleContactEntry)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
           </tr>
         <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/DeleteContactPhotoByIdMessageProcessor.html">DeleteContactPhotoByIdMessageProcessor</a></td>
@@ -600,7 +612,7 @@ Summary:
           </tr>
         <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/DeleteContactPhotoMessageProcessor.html">DeleteContactPhotoMessageProcessor</a></td>
-              <td class="jd-descrcol" width="100%">DeleteContactPhotoMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#deleteContactPhoto(com.google.gdata.data.contacts.ContactEntry)">deleteContactPhoto(com.google.gdata.data.contacts.ContactEntry)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
+              <td class="jd-descrcol" width="100%">DeleteContactPhotoMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#deleteContactPhoto(org.mule.modules.google.contact.wrappers.GoogleContactEntry)">deleteContactPhoto(org.mule.modules.google.contact.wrappers.GoogleContactEntry)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
           </tr>
         <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/DeleteGroupByIdMessageProcessor.html">DeleteGroupByIdMessageProcessor</a></td>
@@ -608,7 +620,7 @@ Summary:
           </tr>
         <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/DeleteGroupMessageProcessor.html">DeleteGroupMessageProcessor</a></td>
-              <td class="jd-descrcol" width="100%">DeleteGroupMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#deleteGroup(com.google.gdata.data.contacts.ContactGroupEntry)">deleteGroup(com.google.gdata.data.contacts.ContactGroupEntry)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
+              <td class="jd-descrcol" width="100%">DeleteGroupMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#deleteGroup(org.mule.modules.google.contact.wrappers.GoogleContactGroupEntry)">deleteGroup(org.mule.modules.google.contact.wrappers.GoogleContactGroupEntry)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
           </tr>
         <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/DownloadPhotoByIdMessageProcessor.html">DownloadPhotoByIdMessageProcessor</a></td>
@@ -616,7 +628,7 @@ Summary:
           </tr>
         <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/DownloadPhotoMessageProcessor.html">DownloadPhotoMessageProcessor</a></td>
-              <td class="jd-descrcol" width="100%">DownloadPhotoMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#downloadPhoto(com.google.gdata.data.contacts.ContactEntry)">downloadPhoto(com.google.gdata.data.contacts.ContactEntry)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
+              <td class="jd-descrcol" width="100%">DownloadPhotoMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#downloadPhoto(org.mule.modules.google.contact.wrappers.GoogleContactEntry)">downloadPhoto(org.mule.modules.google.contact.wrappers.GoogleContactEntry)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
           </tr>
         <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/GetContactByIdMessageProcessor.html">GetContactByIdMessageProcessor</a></td>
@@ -640,7 +652,7 @@ Summary:
           </tr>
         <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/InsertContactMessageProcessor.html">InsertContactMessageProcessor</a></td>
-              <td class="jd-descrcol" width="100%">InsertContactMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#insertContact(com.google.gdata.data.contacts.ContactEntry)">insertContact(com.google.gdata.data.contacts.ContactEntry)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
+              <td class="jd-descrcol" width="100%">InsertContactMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#insertContact(org.mule.modules.google.contact.wrappers.GoogleContactEntry)">insertContact(org.mule.modules.google.contact.wrappers.GoogleContactEntry)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
           </tr>
         <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/UnauthorizeMessageProcessor.html">UnauthorizeMessageProcessor</a></td>
@@ -648,7 +660,7 @@ Summary:
           </tr>
         <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/UpdateContactMessageProcessor.html">UpdateContactMessageProcessor</a></td>
-              <td class="jd-descrcol" width="100%">UpdateContactMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#updateContact(com.google.gdata.data.contacts.ContactEntry)">updateContact(com.google.gdata.data.contacts.ContactEntry)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
+              <td class="jd-descrcol" width="100%">UpdateContactMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#updateContact(org.mule.modules.google.contact.wrappers.GoogleContactEntry)">updateContact(org.mule.modules.google.contact.wrappers.GoogleContactEntry)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
           </tr>
         <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/UpdateContactPhotoMessageProcessor.html">UpdateContactPhotoMessageProcessor</a></td>
@@ -656,7 +668,7 @@ Summary:
           </tr>
         <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/contact/processors/UpdateGroupMessageProcessor.html">UpdateGroupMessageProcessor</a></td>
-              <td class="jd-descrcol" width="100%">UpdateGroupMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#updateGroup(com.google.gdata.data.contacts.ContactGroupEntry)">updateGroup(com.google.gdata.data.contacts.ContactGroupEntry)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
+              <td class="jd-descrcol" width="100%">UpdateGroupMessageProcessor invokes the <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html#updateGroup(org.mule.modules.google.contact.wrappers.GoogleContactGroupEntry)">updateGroup(org.mule.modules.google.contact.wrappers.GoogleContactGroupEntry)</a></code> method in <code><a href="../../../../../../../java/org/mule/modules/google/contact/GoogleContactsConnector.html">GoogleContactsConnector</a></code>.&nbsp;</td>
           </tr>
   </table>
       </div>

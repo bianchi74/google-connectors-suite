@@ -18,9 +18,14 @@ com.sun.activation.registries
 com.sun.activation.viewers
 java.lang.holders
 org.mule.module.gmail
+org.mule.module.gmail.adapter
 org.mule.module.gmail.adapters
 org.mule.module.gmail.agents
+org.mule.module.gmail.basic
+org.mule.module.gmail.callback
 org.mule.module.gmail.config
+org.mule.module.gmail.connection
+org.mule.module.gmail.devkit
 org.mule.module.gmail.model
 org.mule.module.gmail.model.holders
 org.mule.module.gmail.model.transformers

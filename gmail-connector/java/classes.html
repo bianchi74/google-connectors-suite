@@ -243,11 +243,21 @@
     <li class="api apilevel-">
   <a href="../java/org/mule/module/gmail/package-summary.html">org.mule.module.gmail</a></li>
     <li class="api apilevel-">
+  <a href="../java/org/mule/module/gmail/adapter/package-summary.html">org.mule.module.gmail.adapter</a></li>
+    <li class="api apilevel-">
   <a href="../java/org/mule/module/gmail/adapters/package-summary.html">org.mule.module.gmail.adapters</a></li>
     <li class="api apilevel-">
   <a href="../java/org/mule/module/gmail/agents/package-summary.html">org.mule.module.gmail.agents</a></li>
     <li class="api apilevel-">
+  <a href="../java/org/mule/module/gmail/basic/package-summary.html">org.mule.module.gmail.basic</a></li>
+    <li class="api apilevel-">
+  <a href="../java/org/mule/module/gmail/callback/package-summary.html">org.mule.module.gmail.callback</a></li>
+    <li class="api apilevel-">
   <a href="../java/org/mule/module/gmail/config/package-summary.html">org.mule.module.gmail.config</a></li>
+    <li class="api apilevel-">
+  <a href="../java/org/mule/module/gmail/connection/package-summary.html">org.mule.module.gmail.connection</a></li>
+    <li class="api apilevel-">
+  <a href="../java/org/mule/module/gmail/devkit/package-summary.html">org.mule.module.gmail.devkit</a></li>
     <li class="api apilevel-">
   <a href="../java/org/mule/module/gmail/model/package-summary.html">org.mule.module.gmail.model</a></li>
     <li class="api apilevel-">
@@ -644,6 +654,18 @@
     
     
         <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/basic/Capabilities.html">Capabilities</a></td>
+            <td class="jd-descrcol" width="100%">This interface is implemented for every org.mule.api.annotations.Module annotated class, to dynamically query what its capabilities are.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/basic/Capability.html">Capability</a></td>
+            <td class="jd-descrcol" width="100%">Enumeration of possible capabilities of Mule modules.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/iap/CommandFailedException.html">CommandFailedException</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
@@ -679,26 +701,38 @@
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/event/ConnectionAdapter.html">ConnectionAdapter</a></td>
-            <td class="jd-descrcol" width="100%">The adapter which receives connection events.&nbsp;</td>
-        </tr>
-    
-    
-        <tr class="alt-color api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/event/ConnectionEvent.html">ConnectionEvent</a></td>
-            <td class="jd-descrcol" width="100%">This class models Connection events.&nbsp;</td>
-        </tr>
-    
-    
-        <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/iap/ConnectionException.html">ConnectionException</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/connection/Connection.html">Connection</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
         <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/event/ConnectionAdapter.html">ConnectionAdapter</a></td>
+            <td class="jd-descrcol" width="100%">The adapter which receives connection events.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/event/ConnectionEvent.html">ConnectionEvent</a></td>
+            <td class="jd-descrcol" width="100%">This class models Connection events.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/iap/ConnectionException.html">ConnectionException</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/event/ConnectionListener.html">ConnectionListener</a></td>
             <td class="jd-descrcol" width="100%">This is the Listener interface for Connection events.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/connection/ConnectionManager.html">ConnectionManager</a>&lt;K,&nbsp;C&nbsp;extends&nbsp;<a href="../java/org/mule/module/gmail/connection/Connection.html">Connection</a>&gt;</td>
+            <td class="jd-descrcol" width="100%">Wrapper around org.mule.api.annotations.Connector annotated class that will infuse it with connection management capabilities.&nbsp;</td>
         </tr>
     
     
@@ -1167,6 +1201,18 @@
         </tr>
     
     
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/callback/HttpCallback.html">HttpCallback</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/adapter/HttpCallbackAdapter.html">HttpCallbackAdapter</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
 </table>
 
 
@@ -1588,123 +1634,129 @@
     
     
         <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/basic/MetadataAware.html">MetadataAware</a></td>
+            <td class="jd-descrcol" width="100%">This interface is implemented for every org.mule.api.annotations.Module and org.mule.api.annotations.Connector annotated class and its purpose is to define a contract to query the annotated class about its metadata.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/MethodNotSupportedException.html">MethodNotSupportedException</a></td>
             <td class="jd-descrcol" width="100%">The exception thrown when a method is not supported by the 
  implementation&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/internet/MimeBodyPart.html">MimeBodyPart</a></td>
             <td class="jd-descrcol" width="100%">This class represents a MIME body part.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/internet/MimeMessage.html">MimeMessage</a></td>
             <td class="jd-descrcol" width="100%">This class represents a MIME style email message.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/internet/MimeMessage.RecipientType.html">MimeMessage.RecipientType</a></td>
             <td class="jd-descrcol" width="100%">This inner class extends the javax.mail.Message.RecipientType
  class to add additional RecipientTypes.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/internet/MimeMultipart.html">MimeMultipart</a></td>
             <td class="jd-descrcol" width="100%">The MimeMultipart class is an implementation of the abstract Multipart
  class that uses MIME conventions for the multipart data.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/internet/MimePart.html">MimePart</a></td>
             <td class="jd-descrcol" width="100%">The MimePart interface models an <strong>Entity</strong> as defined
  by MIME (RFC2045, Section 2.4).&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/internet/MimePartDataSource.html">MimePartDataSource</a></td>
             <td class="jd-descrcol" width="100%">A utility class that implements a DataSource out of
  a MimePart.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/activation/MimeType.html">MimeType</a></td>
             <td class="jd-descrcol" width="100%">A Multipurpose Internet Mail Extension (MIME) type, as defined
  in RFC 2045 and 2046.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/sun/activation/registries/MimeTypeEntry.html">MimeTypeEntry</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/sun/activation/registries/MimeTypeFile.html">MimeTypeFile</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/activation/MimeTypeParameterList.html">MimeTypeParameterList</a></td>
             <td class="jd-descrcol" width="100%">A parameter list of a MimeType
  as defined in RFC 2045 and 2046.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/activation/MimeTypeParseException.html">MimeTypeParseException</a></td>
             <td class="jd-descrcol" width="100%">A class to encapsulate MimeType parsing related exceptions.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/activation/MimetypesFileTypeMap.html">MimetypesFileTypeMap</a></td>
             <td class="jd-descrcol" width="100%">This class extends FileTypeMap and provides data typing of files
  via their file extension.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/util/MimeUtil.html">MimeUtil</a></td>
             <td class="jd-descrcol" width="100%">General MIME-related utility methods.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/internet/MimeUtility.html">MimeUtility</a></td>
             <td class="jd-descrcol" width="100%">This is a utility class that provides various MIME related
  functionality.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/ModelAdapter.html">ModelAdapter</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/Multipart.html">Multipart</a></td>
             <td class="jd-descrcol" width="100%">Multipart is a container that holds multiple body parts.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/handlers/multipart_mixed.html">multipart_mixed</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/MultipartDataSource.html">MultipartDataSource</a></td>
             <td class="jd-descrcol" width="100%">MultipartDataSource is a <code>DataSource</code> that contains body
  parts.&nbsp;</td>
@@ -1751,12 +1803,18 @@
     
     
         <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/oauth/NotAuthorizedException.html">NotAuthorizedException</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/search/NotTerm.html">NotTerm</a></td>
             <td class="jd-descrcol" width="100%">This class implements the logical NEGATION operator.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/auth/Ntlm.html">Ntlm</a></td>
             <td class="jd-descrcol" width="100%">NTLMAuthentication:&nbsp;</td>
         </tr>
@@ -1767,6 +1825,18 @@
 
 <h2 id="letter_O">O</h2>
 <table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/oauth/OAuth1Adapter.html">OAuth1Adapter</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/oauth/OAuth2Adapter.html">OAuth2Adapter</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
     
     
         <tr class="alt-color api apilevel-" >
@@ -1784,6 +1854,19 @@
         <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/oauth/OAuth2SaslClientFactory.html">OAuth2SaslClientFactory</a></td>
             <td class="jd-descrcol" width="100%">A SaslClientFactory that returns instances of OAuth2SaslClient.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/oauth/OAuthAdapter.html">OAuthAdapter</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/oauth/OAuthManager.html">OAuthManager</a>&lt;C&nbsp;extends&nbsp;<a href="../java/org/mule/module/gmail/oauth/OAuthAdapter.html">OAuthAdapter</a>&gt;</td>
+            <td class="jd-descrcol" width="100%">Wrapper around org.mule.api.annotations.oauth.OAuth annotated class that will infuse it with
+ access token management capabilities.&nbsp;</td>
         </tr>
     
     
@@ -1840,67 +1923,97 @@
     
     
         <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/adapter/PoolManager.html">PoolManager</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/pop3/POP3Folder.html">POP3Folder</a></td>
             <td class="jd-descrcol" width="100%">A POP3 GmailFolder (can only be "INBOX").&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/pop3/POP3Message.html">POP3Message</a></td>
             <td class="jd-descrcol" width="100%">A POP3 Message.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/pop3/POP3SSLStore.html">POP3SSLStore</a></td>
             <td class="jd-descrcol" width="100%">A POP3 Message Store using SSL.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/pop3/POP3Store.html">POP3Store</a></td>
             <td class="jd-descrcol" width="100%">A POP3 Message Store.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/internet/PreencodedMimeBodyPart.html">PreencodedMimeBodyPart</a></td>
             <td class="jd-descrcol" width="100%">A MimeBodyPart that handles data that has already been encoded.&nbsp;</td>
         </tr>
     
     
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/process/ProcessAdapter.html">ProcessAdapter</a>&lt;O&gt;</td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
         <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/process/ProcessCallback.html">ProcessCallback</a>&lt;T,&nbsp;O&gt;</td>
+            <td class="jd-descrcol" width="100%">Callback with logic to execute within a controlled environment provided by <code><a href="../java/org/mule/module/gmail/process/ProcessTemplate.html">ProcessTemplate</a></code>&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/process/ProcessCallbackProcessInterceptor.html">ProcessCallbackProcessInterceptor</a>&lt;T,&nbsp;O&gt;</td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/process/ProcessInterceptor.html">ProcessInterceptor</a>&lt;T,&nbsp;O&gt;</td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
         <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/process/ProcessTemplate.html">ProcessTemplate</a>&lt;T,&nbsp;O&gt;</td>
+            <td class="jd-descrcol" width="100%">ProcessTemplate provides a processing context for message processing.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/util/PropUtil.html">PropUtil</a></td>
             <td class="jd-descrcol" width="100%">Utilities to make it easier to get property values.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/iap/Protocol.html">Protocol</a></td>
             <td class="jd-descrcol" width="100%">General protocol handling code for IMAP-like protocols.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/iap/ProtocolException.html">ProtocolException</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/Provider.html">Provider</a></td>
             <td class="jd-descrcol" width="100%">The Provider is a class that describes a protocol 
  implementation.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/Provider.Type.html">Provider.Type</a></td>
             <td class="jd-descrcol" width="100%">This inner class defines the Provider type.&nbsp;</td>
         </tr>
@@ -2016,25 +2129,31 @@
     
     
         <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/oauth/RestoreAccessTokenCallback.html">RestoreAccessTokenCallback</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/imap/protocol/RFC822DATA.html">RFC822DATA</a></td>
             <td class="jd-descrcol" width="100%">This class &nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/imap/protocol/RFC822SIZE.html">RFC822SIZE</a></td>
             <td class="jd-descrcol" width="100%">This class &nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/imap/Rights.html">Rights</a></td>
             <td class="jd-descrcol" width="100%">The Rights class represents the set of rights for an authentication
  identifier (for instance, a user or a group).&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/imap/Rights.Right.html">Rights.Right</a></td>
             <td class="jd-descrcol" width="100%">This inner class represents an individual right.&nbsp;</td>
         </tr>
@@ -2060,100 +2179,106 @@
     
     
         <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/oauth/SaveAccessTokenCallback.html">SaveAccessTokenCallback</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/search/SearchCriteria.html">SearchCriteria</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/search/holders/SearchCriteriaExpressionHolder.html">SearchCriteriaExpressionHolder</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/search/transformers/SearchCriteriaExpressionHolderTransformer.html">SearchCriteriaExpressionHolderTransformer</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/config/SearchDefinitionParser.html">SearchDefinitionParser</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/search/SearchException.html">SearchException</a></td>
             <td class="jd-descrcol" width="100%">The exception thrown when a Search expression could not be handled.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/processors/SearchMessageProcessor.html">SearchMessageProcessor</a></td>
             <td class="jd-descrcol" width="100%">SearchMessageProcessor invokes the <code><a href="../java/org/mule/module/gmail/BaseGmailConnector.html#search(java.lang.String, org.mule.module.gmail.search.GmailFolder, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.Integer, org.mule.module.gmail.search.SearchCriteria, java.util.List<org.mule.module.gmail.search.FlagCriteria>, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.String, java.util.List<java.lang.String>, java.util.List<java.lang.String>, java.lang.String, java.util.List<java.lang.String>, java.lang.String, java.lang.Boolean, java.lang.Boolean)">search(java.lang.String, org.mule.module.gmail.search.GmailFolder, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.lang.Integer, org.mule.module.gmail.search.SearchCriteria, java.util.List, java.util.List, java.util.List, java.lang.String, java.util.List, java.util.List, java.lang.String, java.util.List, java.lang.String, java.lang.Boolean, java.lang.Boolean)</a></code> method in <code><a href="../java/org/mule/module/gmail/BaseGmailConnector.html">BaseGmailConnector</a></code>.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/search/SearchOperator.html">SearchOperator</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/search/transformers/SearchOperatorEnumTransformer.html">SearchOperatorEnumTransformer</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/imap/protocol/SearchSequence.html">SearchSequence</a></td>
             <td class="jd-descrcol" width="100%">This class traverses a search-tree and generates the 
  corresponding IMAP search sequence.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/search/SearchTerm.html">SearchTerm</a></td>
             <td class="jd-descrcol" width="100%">Search criteria are expressed as a tree of search-terms, forming
  a parse-tree for the search expression.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/SendFailedException.html">SendFailedException</a></td>
             <td class="jd-descrcol" width="100%">This exception is thrown when the message cannot be sent.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/search/SentDateTerm.html">SentDateTerm</a></td>
             <td class="jd-descrcol" width="100%">This class implements comparisons for the Message SentDate.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/Service.html">Service</a></td>
             <td class="jd-descrcol" width="100%">An abstract class that contains the functionality
  common to messaging services, such as stores and transports.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/Session.html">Session</a></td>
             <td class="jd-descrcol" width="100%">The Session class represents a mail session and is not subclassed.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/util/SharedByteArrayInputStream.html">SharedByteArrayInputStream</a></td>
             <td class="jd-descrcol" width="100%">A ByteArrayInputStream that implements the SharedInputStream interface,
  allowing the underlying byte array to be shared between multiple readers.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/util/SharedFileInputStream.html">SharedFileInputStream</a></td>
             <td class="jd-descrcol" width="100%">A <code>SharedFileInputStream</code> is a
  <code>BufferedInputStream</code> that buffers
@@ -2162,33 +2287,33 @@
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/internet/SharedInputStream.html">SharedInputStream</a></td>
             <td class="jd-descrcol" width="100%">An InputStream that is backed by data that can be shared by multiple
  readers may implement this interface.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/javax/mail/search/SizeTerm.html">SizeTerm</a></td>
             <td class="jd-descrcol" width="100%">This class implements comparisons for Message sizes.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/smtp/SMTPAddressFailedException.html">SMTPAddressFailedException</a></td>
             <td class="jd-descrcol" width="100%">This exception is thrown when the message cannot be sent.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/smtp/SMTPAddressSucceededException.html">SMTPAddressSucceededException</a></td>
             <td class="jd-descrcol" width="100%">This exception is chained off a SendFailedException when the
  <code>mail.smtp.reportsuccess</code> property is true.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/smtp/SMTPMessage.html">SMTPMessage</a></td>
             <td class="jd-descrcol" width="100%">This class is a specialization of the MimeMessage class that allows
  you to specify various SMTP options and parameters that will be
@@ -2196,7 +2321,7 @@
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/smtp/SMTPOutputStream.html">SMTPOutputStream</a></td>
             <td class="jd-descrcol" width="100%">In addition to converting lines into the canonical format,
  i.e., terminating lines with the CRLF sequence, escapes the "."
@@ -2205,55 +2330,75 @@
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/smtp/SMTPSaslAuthenticator.html">SMTPSaslAuthenticator</a></td>
             <td class="jd-descrcol" width="100%">This class contains a single method that does authentication using
  SASL.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/smtp/SMTPSenderFailedException.html">SMTPSenderFailedException</a></td>
             <td class="jd-descrcol" width="100%">This exception is thrown when the message cannot be sent.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/smtp/SMTPSendFailedException.html">SMTPSendFailedException</a></td>
             <td class="jd-descrcol" width="100%">This exception is thrown when the message cannot be sent.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/smtp/SMTPSSLTransport.html">SMTPSSLTransport</a></td>
             <td class="jd-descrcol" width="100%">This class implements the Transport abstract class using SMTP
  over SSL for message submission and transport.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/smtp/SMTPTransport.html">SMTPTransport</a></td>
             <td class="jd-descrcol" width="100%">This class implements the Transport abstract class using SMTP for
  message submission and transport.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/util/SocketFetcher.html">SocketFetcher</a></td>
             <td class="jd-descrcol" width="100%">This class is used to get Sockets.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/imap/SortTerm.html">SortTerm</a></td>
             <td class="jd-descrcol" width="100%">A particular sort criteria, as defined by
  <A HREF="http://www.ietf.org/rfc/rfc5256.txt">RFC 5256</A>.&nbsp;</td>
         </tr>
     
     
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/callback/SourceCallback.html">SourceCallback</a></td>
+            <td class="jd-descrcol" width="100%">Callback interface used by org.mule.api.annotations.Source annotated methods to dispatch messages.&nbsp;</td>
+        </tr>
+    
+    
         <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/devkit/SplashScreenAgent.html">SplashScreenAgent</a></td>
+            <td class="jd-descrcol" width="100%">Marks DevKit org.mule.api.agent.Agent implementations to take care of logging information at Mule app level mainly for troubleshooting purposes.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/imap/protocol/Status.html">Status</a></td>
             <td class="jd-descrcol" width="100%">STATUS response.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/callback/StopSourceCallback.html">StopSourceCallback</a></td>
+            <td class="jd-descrcol" width="100%">Callback returned by methods that are annotated with @Source
+ <p/>
+ It will be executed when the MessageSource is being stopped.&nbsp;</td>
         </tr>
     
     
@@ -2414,6 +2559,36 @@
         <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/com/google/code/com/sun/mail/imap/protocol/UIDSet.html">UIDSet</a></td>
             <td class="jd-descrcol" width="100%">This class holds the 'start' and 'end' for a range of UIDs.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/oauth/UnableToAcquireAccessTokenException.html">UnableToAcquireAccessTokenException</a></td>
+            <td class="jd-descrcol" width="100%">Exception thrown when the access token needed for accessing a protected resource cannot be acquired
+ 
+&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/connection/UnableToAcquireConnectionException.html">UnableToAcquireConnectionException</a></td>
+            <td class="jd-descrcol" width="100%">Exception thrown when the connection needed for executing an
+  operation is null.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/oauth/UnableToAcquireRequestTokenException.html">UnableToAcquireRequestTokenException</a></td>
+            <td class="jd-descrcol" width="100%">Exception thrown when the request token needed for building the authorization URL cannot be acquired
+ 
+&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/gmail/connection/UnableToReleaseConnectionException.html">UnableToReleaseConnectionException</a></td>
+            <td class="jd-descrcol" width="100%">Exception thrown when the release connection operation of the
+  connection manager fails.&nbsp;</td>
         </tr>
     
     

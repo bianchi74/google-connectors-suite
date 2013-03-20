@@ -1,8 +1,13 @@
 java.lang.holders
 org.mule.modules.google.prediction
+org.mule.modules.google.prediction.adapter
 org.mule.modules.google.prediction.adapters
 org.mule.modules.google.prediction.agents
+org.mule.modules.google.prediction.basic
+org.mule.modules.google.prediction.callback
 org.mule.modules.google.prediction.config
+org.mule.modules.google.prediction.connection
+org.mule.modules.google.prediction.devkit
 org.mule.modules.google.prediction.model
 org.mule.modules.google.prediction.oauth
 org.mule.modules.google.prediction.process

@@ -208,11 +208,21 @@
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/prediction/package-summary.html">org.mule.modules.google.prediction</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/modules/google/prediction/adapter/package-summary.html">org.mule.modules.google.prediction.adapter</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/prediction/adapters/package-summary.html">org.mule.modules.google.prediction.adapters</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/prediction/agents/package-summary.html">org.mule.modules.google.prediction.agents</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/modules/google/prediction/basic/package-summary.html">org.mule.modules.google.prediction.basic</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/modules/google/prediction/callback/package-summary.html">org.mule.modules.google.prediction.callback</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/prediction/config/package-summary.html">org.mule.modules.google.prediction.config</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/modules/google/prediction/connection/package-summary.html">org.mule.modules.google.prediction.connection</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/modules/google/prediction/devkit/package-summary.html">org.mule.modules.google.prediction.devkit</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/modules/google/prediction/model/package-summary.html">org.mule.modules.google.prediction.model</a></li>
     <li class="selected api apilevel-">
@@ -229,6 +239,16 @@
           <div id="classes-nav">
             <ul>
               
+    <li><h2>Interfaces</h2>
+      <ul>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/OAuth1Adapter.html">OAuth1Adapter</a></li>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/OAuth2Adapter.html">OAuth2Adapter</a></li>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/OAuthAdapter.html">OAuthAdapter</a></li>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/OAuthManager.html">OAuthManager</a>&lt;C&nbsp;extends&nbsp;<a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/OAuthAdapter.html">OAuthAdapter</a>&gt;</li>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/RestoreAccessTokenCallback.html">RestoreAccessTokenCallback</a></li>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/SaveAccessTokenCallback.html">SaveAccessTokenCallback</a></li>
+      </ul>
+    </li>
               
     <li><h2>Classes</h2>
       <ul>
@@ -246,6 +266,13 @@
               
               
               
+    <li><h2>Exceptions</h2>
+      <ul>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/NotAuthorizedException.html">NotAuthorizedException</a></li>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/UnableToAcquireAccessTokenException.html">UnableToAcquireAccessTokenException</a></li>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/UnableToAcquireRequestTokenException.html">UnableToAcquireRequestTokenException</a></li>
+      </ul>
+    </li>
               
             </ul><br/>
           </div><!-- end classes -->
@@ -306,6 +333,38 @@
 
 
   
+    <h2>Interfaces</h2>
+    <div class="jd-sumtable">
+    
+  <table class="jd-sumtable-expando">
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/OAuth1Adapter.html">OAuth1Adapter</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/OAuth2Adapter.html">OAuth2Adapter</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/OAuthAdapter.html">OAuthAdapter</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/OAuthManager.html">OAuthManager</a>&lt;C&nbsp;extends&nbsp;<a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/OAuthAdapter.html">OAuthAdapter</a>&gt;</td>
+              <td class="jd-descrcol" width="100%">Wrapper around org.mule.api.annotations.oauth.OAuth annotated class that will infuse it with
+ access token management capabilities.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/RestoreAccessTokenCallback.html">RestoreAccessTokenCallback</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/SaveAccessTokenCallback.html">SaveAccessTokenCallback</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+  </table>
+    </div>
+  
 
 
   
@@ -359,6 +418,29 @@
   
 
 
+  
+    <h2>Exceptions</h2>
+    <div class="jd-sumtable">
+    
+  <table class="jd-sumtable-expando">
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/NotAuthorizedException.html">NotAuthorizedException</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/UnableToAcquireAccessTokenException.html">UnableToAcquireAccessTokenException</a></td>
+              <td class="jd-descrcol" width="100%">Exception thrown when the access token needed for accessing a protected resource cannot be acquired
+ 
+&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/modules/google/prediction/oauth/UnableToAcquireRequestTokenException.html">UnableToAcquireRequestTokenException</a></td>
+              <td class="jd-descrcol" width="100%">Exception thrown when the request token needed for building the authorization URL cannot be acquired
+ 
+&nbsp;</td>
+          </tr>
+  </table>
+    </div>
   
 
 

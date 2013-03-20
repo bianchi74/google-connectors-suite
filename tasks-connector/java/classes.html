@@ -205,11 +205,21 @@
     <li class="api apilevel-">
   <a href="../java/org/mule/module/google/task/package-summary.html">org.mule.module.google.task</a></li>
     <li class="api apilevel-">
+  <a href="../java/org/mule/module/google/task/adapter/package-summary.html">org.mule.module.google.task.adapter</a></li>
+    <li class="api apilevel-">
   <a href="../java/org/mule/module/google/task/adapters/package-summary.html">org.mule.module.google.task.adapters</a></li>
     <li class="api apilevel-">
   <a href="../java/org/mule/module/google/task/agents/package-summary.html">org.mule.module.google.task.agents</a></li>
     <li class="api apilevel-">
+  <a href="../java/org/mule/module/google/task/basic/package-summary.html">org.mule.module.google.task.basic</a></li>
+    <li class="api apilevel-">
+  <a href="../java/org/mule/module/google/task/callback/package-summary.html">org.mule.module.google.task.callback</a></li>
+    <li class="api apilevel-">
   <a href="../java/org/mule/module/google/task/config/package-summary.html">org.mule.module.google.task.config</a></li>
+    <li class="api apilevel-">
+  <a href="../java/org/mule/module/google/task/connection/package-summary.html">org.mule.module.google.task.connection</a></li>
+    <li class="api apilevel-">
+  <a href="../java/org/mule/module/google/task/devkit/package-summary.html">org.mule.module.google.task.devkit</a></li>
     <li class="api apilevel-">
   <a href="../java/org/mule/module/google/task/model/package-summary.html">org.mule.module.google.task.model</a></li>
     <li class="api apilevel-">
@@ -273,6 +283,7 @@
     <a href="#letter_E">E</a>
     <a href="#letter_F">F</a>
     <a href="#letter_G">G</a>
+    <a href="#letter_H">H</a>
     <a href="#letter_I">I</a>
     <a href="#letter_L">L</a>
     <a href="#letter_M">M</a>
@@ -280,6 +291,7 @@
     <a href="#letter_O">O</a>
     <a href="#letter_P">P</a>
     <a href="#letter_R">R</a>
+    <a href="#letter_S">S</a>
     <a href="#letter_T">T</a>
     <a href="#letter_U">U</a>
 </div>
@@ -352,6 +364,18 @@
     
     
         <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/basic/Capabilities.html">Capabilities</a></td>
+            <td class="jd-descrcol" width="100%">This interface is implemented for every org.mule.api.annotations.Module annotated class, to dynamically query what its capabilities are.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/basic/Capability.html">Capability</a></td>
+            <td class="jd-descrcol" width="100%">Enumeration of possible capabilities of Mule modules.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/config/ClearTasksDefinitionParser.html">ClearTasksDefinitionParser</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
@@ -360,6 +384,18 @@
         <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/processors/ClearTasksMessageProcessor.html">ClearTasksMessageProcessor</a></td>
             <td class="jd-descrcol" width="100%">ClearTasksMessageProcessor invokes the <code><a href="../java/org/mule/module/google/task/GoogleTasksConnector.html#clearTasks(java.lang.String)">clearTasks(java.lang.String)</a></code> method in <code><a href="../java/org/mule/module/google/task/GoogleTasksConnector.html">GoogleTasksConnector</a></code>.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/connection/Connection.html">Connection</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/connection/ConnectionManager.html">ConnectionManager</a>&lt;K,&nbsp;C&nbsp;extends&nbsp;<a href="../java/org/mule/module/google/task/connection/Connection.html">Connection</a>&gt;</td>
+            <td class="jd-descrcol" width="100%">Wrapper around org.mule.api.annotations.Connector annotated class that will infuse it with connection management capabilities.&nbsp;</td>
         </tr>
     
     
@@ -578,6 +614,25 @@
 </table>
 
 
+<h2 id="letter_H">H</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/callback/HttpCallback.html">HttpCallback</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/adapter/HttpCallbackAdapter.html">HttpCallbackAdapter</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
 <h2 id="letter_I">I</h2>
 <table class="jd-sumtable">
     
@@ -646,12 +701,18 @@
     
     
         <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/basic/MetadataAware.html">MetadataAware</a></td>
+            <td class="jd-descrcol" width="100%">This interface is implemented for every org.mule.api.annotations.Module and org.mule.api.annotations.Connector annotated class and its purpose is to define a contract to query the annotated class about its metadata.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/config/MoveDefinitionParser.html">MoveDefinitionParser</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/processors/MoveMessageProcessor.html">MoveMessageProcessor</a></td>
             <td class="jd-descrcol" width="100%">MoveMessageProcessor invokes the <code><a href="../java/org/mule/module/google/task/GoogleTasksConnector.html#move(java.lang.String, java.lang.String, java.lang.String, java.lang.String)">move(java.lang.String, java.lang.String, java.lang.String, java.lang.String)</a></code> method in <code><a href="../java/org/mule/module/google/task/GoogleTasksConnector.html">GoogleTasksConnector</a></code>.&nbsp;</td>
         </tr>
@@ -670,11 +731,42 @@
         </tr>
     
     
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/oauth/NotAuthorizedException.html">NotAuthorizedException</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
 </table>
 
 
 <h2 id="letter_O">O</h2>
 <table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/oauth/OAuth1Adapter.html">OAuth1Adapter</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/oauth/OAuth2Adapter.html">OAuth2Adapter</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/oauth/OAuthAdapter.html">OAuthAdapter</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/oauth/OAuthManager.html">OAuthManager</a>&lt;C&nbsp;extends&nbsp;<a href="../java/org/mule/module/google/task/oauth/OAuthAdapter.html">OAuthAdapter</a>&gt;</td>
+            <td class="jd-descrcol" width="100%">Wrapper around org.mule.api.annotations.oauth.OAuth annotated class that will infuse it with
+ access token management capabilities.&nbsp;</td>
+        </tr>
     
     
         <tr class="alt-color api apilevel-" >
@@ -691,8 +783,38 @@
     
     
         <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/adapter/PoolManager.html">PoolManager</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/process/ProcessAdapter.html">ProcessAdapter</a>&lt;O&gt;</td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/process/ProcessCallback.html">ProcessCallback</a>&lt;T,&nbsp;O&gt;</td>
+            <td class="jd-descrcol" width="100%">Callback with logic to execute within a controlled environment provided by <code><a href="../java/org/mule/module/google/task/process/ProcessTemplate.html">ProcessTemplate</a></code>&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
             <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/process/ProcessCallbackProcessInterceptor.html">ProcessCallbackProcessInterceptor</a>&lt;T,&nbsp;O&gt;</td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/process/ProcessInterceptor.html">ProcessInterceptor</a>&lt;T,&nbsp;O&gt;</td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/process/ProcessTemplate.html">ProcessTemplate</a>&lt;T,&nbsp;O&gt;</td>
+            <td class="jd-descrcol" width="100%">ProcessTemplate provides a processing context for message processing.&nbsp;</td>
         </tr>
     
     
@@ -706,6 +828,45 @@
         <tr class="alt-color api apilevel-" >
             <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/oauth/RefreshTokenProcessInterceptor.html">RefreshTokenProcessInterceptor</a>&lt;T&gt;</td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/oauth/RestoreAccessTokenCallback.html">RestoreAccessTokenCallback</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<h2 id="letter_S">S</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/oauth/SaveAccessTokenCallback.html">SaveAccessTokenCallback</a></td>
+            <td class="jd-descrcol" width="100%">&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/callback/SourceCallback.html">SourceCallback</a></td>
+            <td class="jd-descrcol" width="100%">Callback interface used by org.mule.api.annotations.Source annotated methods to dispatch messages.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/devkit/SplashScreenAgent.html">SplashScreenAgent</a></td>
+            <td class="jd-descrcol" width="100%">Marks DevKit org.mule.api.agent.Agent implementations to take care of logging information at Mule app level mainly for troubleshooting purposes.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/callback/StopSourceCallback.html">StopSourceCallback</a></td>
+            <td class="jd-descrcol" width="100%">Callback returned by methods that are annotated with @Source
+ <p/>
+ It will be executed when the MessageSource is being stopped.&nbsp;</td>
         </tr>
     
     
@@ -735,6 +896,36 @@
 
 <h2 id="letter_U">U</h2>
 <table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/oauth/UnableToAcquireAccessTokenException.html">UnableToAcquireAccessTokenException</a></td>
+            <td class="jd-descrcol" width="100%">Exception thrown when the access token needed for accessing a protected resource cannot be acquired
+ 
+&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/connection/UnableToAcquireConnectionException.html">UnableToAcquireConnectionException</a></td>
+            <td class="jd-descrcol" width="100%">Exception thrown when the connection needed for executing an
+  operation is null.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/oauth/UnableToAcquireRequestTokenException.html">UnableToAcquireRequestTokenException</a></td>
+            <td class="jd-descrcol" width="100%">Exception thrown when the request token needed for building the authorization URL cannot be acquired
+ 
+&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../java/org/mule/module/google/task/connection/UnableToReleaseConnectionException.html">UnableToReleaseConnectionException</a></td>
+            <td class="jd-descrcol" width="100%">Exception thrown when the release connection operation of the
+  connection manager fails.&nbsp;</td>
+        </tr>
     
     
         <tr class="alt-color api apilevel-" >

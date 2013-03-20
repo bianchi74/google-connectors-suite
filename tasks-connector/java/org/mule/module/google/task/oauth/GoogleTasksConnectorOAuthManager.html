@@ -205,11 +205,21 @@
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/module/google/task/package-summary.html">org.mule.module.google.task</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/module/google/task/adapter/package-summary.html">org.mule.module.google.task.adapter</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/module/google/task/adapters/package-summary.html">org.mule.module.google.task.adapters</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/module/google/task/agents/package-summary.html">org.mule.module.google.task.agents</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/module/google/task/basic/package-summary.html">org.mule.module.google.task.basic</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/module/google/task/callback/package-summary.html">org.mule.module.google.task.callback</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/module/google/task/config/package-summary.html">org.mule.module.google.task.config</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/module/google/task/connection/package-summary.html">org.mule.module.google.task.connection</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/module/google/task/devkit/package-summary.html">org.mule.module.google.task.devkit</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/module/google/task/model/package-summary.html">org.mule.module.google.task.model</a></li>
     <li class="selected api apilevel-">
@@ -226,6 +236,16 @@
           <div id="classes-nav">
             <ul>
               
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/OAuth1Adapter.html">OAuth1Adapter</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/OAuth2Adapter.html">OAuth2Adapter</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/OAuthAdapter.html">OAuthAdapter</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/OAuthManager.html">OAuthManager</a>&lt;C&nbsp;extends&nbsp;<a href="../../../../../../../java/org/mule/module/google/task/oauth/OAuthAdapter.html">OAuthAdapter</a>&gt;</li>
+          <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/RestoreAccessTokenCallback.html">RestoreAccessTokenCallback</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/SaveAccessTokenCallback.html">SaveAccessTokenCallback</a></li>
+      </ul>
+    </li>
               
     <li><h2>Classes</h2>
       <ul>
@@ -243,6 +263,13 @@
               
               
               
+    <li><h2>Exceptions</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/NotAuthorizedException.html">NotAuthorizedException</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/UnableToAcquireAccessTokenException.html">UnableToAcquireAccessTokenException</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/UnableToAcquireRequestTokenException.html">UnableToAcquireRequestTokenException</a></li>
+      </ul>
+    </li>
               
             </ul><br/>
           </div><!-- end classes -->
@@ -308,6 +335,8 @@
    
   
   
+   
+  
   
   
 
@@ -328,8 +357,6 @@
   
    
   
-  
-   
   
   
   
@@ -426,17 +453,17 @@ Summary:
   
       implements 
       
-        Capabilities 
-      
-        MetadataAware 
-      
         MuleContextAware 
       
         Initialisable 
       
-        OAuthManager&lt;C&nbsp;extends&nbsp;OAuthAdapter&gt; 
+        <a href="../../../../../../../java/org/mule/module/google/task/basic/Capabilities.html">Capabilities</a> 
       
-        ProcessAdapter&lt;O&gt; 
+        <a href="../../../../../../../java/org/mule/module/google/task/basic/MetadataAware.html">MetadataAware</a> 
+      
+        <a href="../../../../../../../java/org/mule/module/google/task/oauth/OAuthManager.html">OAuthManager</a>&lt;C&nbsp;extends&nbsp;<a href="../../../../../../../java/org/mule/module/google/task/oauth/OAuthAdapter.html">OAuthAdapter</a>&gt; 
+      
+        <a href="../../../../../../../java/org/mule/module/google/task/process/ProcessAdapter.html">ProcessAdapter</a>&lt;O&gt; 
       
   
   
@@ -580,12 +607,6 @@ Summary:
 
 
 
-
-
-
-
-
-
 <tr class="api apilevel-" >
 <td colspan="12">
 
@@ -614,6 +635,12 @@ org.mule.api.lifecycle.Initialisable
   </div>
 </div>
 </td></tr>
+
+
+
+
+
+
 
 
 
@@ -973,6 +1000,8 @@ org.mule.api.lifecycle.Initialisable
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/oauth/GoogleTasksConnectorOAuthManager.html#acquireAccessToken(java.lang.String)">acquireAccessToken</a></span>(String userId)</nobr>
         
+        <div class="jd-descrdiv">Borrow an access token from the pool</div>
+  
   </td></tr>
 
 
@@ -1005,6 +1034,9 @@ org.mule.api.lifecycle.Initialisable
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/oauth/GoogleTasksConnectorOAuthManager.html#createAccessToken(java.lang.String)">createAccessToken</a></span>(String verifier)</nobr>
         
+        <div class="jd-descrdiv">Create a new access token using the specified verifier
+ and insert it into the pool</div>
+  
   </td></tr>
 
 
@@ -1213,6 +1245,9 @@ org.mule.api.lifecycle.Initialisable
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/oauth/GoogleTasksConnectorOAuthManager.html#getDevkitBuild()">getDevkitBuild</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Returns the build of the DevKit used to create this module
+</div>
+  
   </td></tr>
 
 
@@ -1229,6 +1264,9 @@ org.mule.api.lifecycle.Initialisable
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/oauth/GoogleTasksConnectorOAuthManager.html#getDevkitVersion()">getDevkitVersion</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Returns the version of the DevKit used to create this module
+</div>
+  
   </td></tr>
 
 
@@ -1285,6 +1323,9 @@ org.mule.api.lifecycle.Initialisable
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/oauth/GoogleTasksConnectorOAuthManager.html#getModuleName()">getModuleName</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Returns the user-friendly name of this module
+</div>
+  
   </td></tr>
 
 
@@ -1301,6 +1342,9 @@ org.mule.api.lifecycle.Initialisable
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/oauth/GoogleTasksConnectorOAuthManager.html#getModuleVersion()">getModuleVersion</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Returns the version of this module
+</div>
+  
   </td></tr>
 
 
@@ -1332,7 +1376,7 @@ org.mule.api.lifecycle.Initialisable
             
             
             &lt;P&gt;
-            ProcessTemplate&lt;P,&nbsp;<a href="../../../../../../../java/org/mule/module/google/task/adapters/GoogleTasksConnectorOAuth2Adapter.html">GoogleTasksConnectorOAuth2Adapter</a>&gt;</nobr>
+            <a href="../../../../../../../java/org/mule/module/google/task/process/ProcessTemplate.html">ProcessTemplate</a>&lt;P,&nbsp;<a href="../../../../../../../java/org/mule/module/google/task/adapters/GoogleTasksConnectorOAuth2Adapter.html">GoogleTasksConnectorOAuth2Adapter</a>&gt;</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/oauth/GoogleTasksConnectorOAuthManager.html#getProcessTemplate()">getProcessTemplate</a></span>()</nobr>
@@ -1387,7 +1431,7 @@ org.mule.api.lifecycle.Initialisable
             boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/oauth/GoogleTasksConnectorOAuthManager.html#isCapableOf(org.mule.api.Capability)">isCapableOf</a></span>(Capability capability)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/oauth/GoogleTasksConnectorOAuthManager.html#isCapableOf(org.mule.module.google.task.basic.Capability)">isCapableOf</a></span>(<a href="../../../../../../../java/org/mule/module/google/task/basic/Capability.html">Capability</a> capability)</nobr>
         
         <div class="jd-descrdiv">Returns true if this module implements such capability
  
@@ -2109,260 +2153,6 @@ From class
 
 <tr class="api apilevel-" >
 <td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-org.mule.api.Capabilities" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-org.mule.api.Capabilities-trigger"
-          src="../../../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From interface
-
-  org.mule.api.Capabilities
-
-<div id="inherited-methods-org.mule.api.Capabilities">
-  <div id="inherited-methods-org.mule.api.Capabilities-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-org.mule.api.Capabilities-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            boolean</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">isCapableOf</span>(Capability arg0)</nobr>
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-org.mule.api.MetadataAware" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-org.mule.api.MetadataAware-trigger"
-          src="../../../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From interface
-
-  org.mule.api.MetadataAware
-
-<div id="inherited-methods-org.mule.api.MetadataAware">
-  <div id="inherited-methods-org.mule.api.MetadataAware-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-org.mule.api.MetadataAware-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getDevkitBuild</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getDevkitVersion</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getModuleName</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getModuleVersion</span>()</nobr>
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-org.mule.api.adapter.HttpCallbackAdapter" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-org.mule.api.adapter.HttpCallbackAdapter-trigger"
-          src="../../../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From interface
-
-  org.mule.api.adapter.HttpCallbackAdapter
-
-<div id="inherited-methods-org.mule.api.adapter.HttpCallbackAdapter">
-  <div id="inherited-methods-org.mule.api.adapter.HttpCallbackAdapter-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-org.mule.api.adapter.HttpCallbackAdapter-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            Boolean</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getAsync</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            Connector</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getConnector</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getDomain</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            Integer</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getLocalPort</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getPath</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            Integer</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getRemotePort</span>()</nobr>
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
   <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-org.mule.api.context.MuleContextAware" class="jd-expando-trigger closed"
           ><img id="inherited-methods-org.mule.api.context.MuleContextAware-trigger"
           src="../../../../../../../assets/images/triangle-closed.png"
@@ -2447,19 +2237,19 @@ From interface
 
 <tr class="api apilevel-" >
 <td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-org.mule.api.oauth.OAuthManager" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-org.mule.api.oauth.OAuthManager-trigger"
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-org.mule.module.google.task.adapter.HttpCallbackAdapter" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-org.mule.module.google.task.adapter.HttpCallbackAdapter-trigger"
           src="../../../../../../../assets/images/triangle-closed.png"
           class="jd-expando-trigger-img" /></a>
 From interface
 
-  org.mule.api.oauth.OAuthManager
+  <a href="../../../../../../../org/mule/module/google/task/adapter/HttpCallbackAdapter.html">org.mule.module.google.task.adapter.HttpCallbackAdapter</a>
 
-<div id="inherited-methods-org.mule.api.oauth.OAuthManager">
-  <div id="inherited-methods-org.mule.api.oauth.OAuthManager-list"
+<div id="inherited-methods-org.mule.module.google.task.adapter.HttpCallbackAdapter">
+  <div id="inherited-methods-org.mule.module.google.task.adapter.HttpCallbackAdapter-list"
         class="jd-inheritedlinks">
   </div>
-  <div id="inherited-methods-org.mule.api.oauth.OAuthManager-summary" style="display: none;">
+  <div id="inherited-methods-org.mule.module.google.task.adapter.HttpCallbackAdapter-summary" style="display: none;">
     <table class="jd-sumtable-expando">
     
 
@@ -2472,10 +2262,10 @@ From interface
             
             
             
-            C</nobr>
+            Boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">acquireAccessToken</span>(String arg0)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/adapter/HttpCallbackAdapter.html#getAsync()">getAsync</a></span>()</nobr>
         
   </td></tr>
 
@@ -2488,10 +2278,10 @@ From interface
             
             
             
-            C</nobr>
+            Connector</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">createAccessToken</span>(String arg0)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/adapter/HttpCallbackAdapter.html#getConnector()">getConnector</a></span>()</nobr>
         
   </td></tr>
 
@@ -2504,10 +2294,10 @@ From interface
             
             
             
-            void</nobr>
+            String</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">destroyAccessToken</span>(String arg0, C arg1)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/adapter/HttpCallbackAdapter.html#getDomain()">getDomain</a></span>()</nobr>
         
   </td></tr>
 
@@ -2520,10 +2310,10 @@ From interface
             
             
             
-            C</nobr>
+            Integer</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getDefaultUnauthorizedConnector</span>()</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/adapter/HttpCallbackAdapter.html#getLocalPort()">getLocalPort</a></span>()</nobr>
         
   </td></tr>
 
@@ -2536,10 +2326,26 @@ From interface
             
             
             
-            void</nobr>
+            String</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">releaseAccessToken</span>(String arg0, C arg1)</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/adapter/HttpCallbackAdapter.html#getPath()">getPath</a></span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            Integer</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/adapter/HttpCallbackAdapter.html#getRemotePort()">getRemotePort</a></span>()</nobr>
         
   </td></tr>
 
@@ -2553,19 +2359,284 @@ From interface
 
 <tr class="api apilevel-" >
 <td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-org.mule.api.process.ProcessAdapter" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-org.mule.api.process.ProcessAdapter-trigger"
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-org.mule.module.google.task.basic.Capabilities" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-org.mule.module.google.task.basic.Capabilities-trigger"
           src="../../../../../../../assets/images/triangle-closed.png"
           class="jd-expando-trigger-img" /></a>
 From interface
 
-  org.mule.api.process.ProcessAdapter
+  <a href="../../../../../../../org/mule/module/google/task/basic/Capabilities.html">org.mule.module.google.task.basic.Capabilities</a>
 
-<div id="inherited-methods-org.mule.api.process.ProcessAdapter">
-  <div id="inherited-methods-org.mule.api.process.ProcessAdapter-list"
+<div id="inherited-methods-org.mule.module.google.task.basic.Capabilities">
+  <div id="inherited-methods-org.mule.module.google.task.basic.Capabilities-list"
         class="jd-inheritedlinks">
   </div>
-  <div id="inherited-methods-org.mule.api.process.ProcessAdapter-summary" style="display: none;">
+  <div id="inherited-methods-org.mule.module.google.task.basic.Capabilities-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/basic/Capabilities.html#isCapableOf(org.mule.module.google.task.basic.Capability)">isCapableOf</a></span>(<a href="../../../../../../../java/org/mule/module/google/task/basic/Capability.html">Capability</a> capability)</nobr>
+        
+        <div class="jd-descrdiv">Returns true if this module implements such
+ capability</div>
+  
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-org.mule.module.google.task.basic.MetadataAware" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-org.mule.module.google.task.basic.MetadataAware-trigger"
+          src="../../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="../../../../../../../org/mule/module/google/task/basic/MetadataAware.html">org.mule.module.google.task.basic.MetadataAware</a>
+
+<div id="inherited-methods-org.mule.module.google.task.basic.MetadataAware">
+  <div id="inherited-methods-org.mule.module.google.task.basic.MetadataAware-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-org.mule.module.google.task.basic.MetadataAware-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/basic/MetadataAware.html#getDevkitBuild()">getDevkitBuild</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the build of the DevKit used to create this module
+</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/basic/MetadataAware.html#getDevkitVersion()">getDevkitVersion</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the version of the DevKit used to create this module
+</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/basic/MetadataAware.html#getModuleName()">getModuleName</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the user-friendly name of this module
+</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/basic/MetadataAware.html#getModuleVersion()">getModuleVersion</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the version of this module
+</div>
+  
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-org.mule.module.google.task.oauth.OAuthManager" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-org.mule.module.google.task.oauth.OAuthManager-trigger"
+          src="../../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="../../../../../../../org/mule/module/google/task/oauth/OAuthManager.html">org.mule.module.google.task.oauth.OAuthManager</a>
+
+<div id="inherited-methods-org.mule.module.google.task.oauth.OAuthManager">
+  <div id="inherited-methods-org.mule.module.google.task.oauth.OAuthManager-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-org.mule.module.google.task.oauth.OAuthManager-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            C</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/oauth/OAuthManager.html#acquireAccessToken(java.lang.String)">acquireAccessToken</a></span>(String userId)</nobr>
+        
+        <div class="jd-descrdiv">Borrow an access token from the pool</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            C</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/oauth/OAuthManager.html#createAccessToken(java.lang.String)">createAccessToken</a></span>(String verifier)</nobr>
+        
+        <div class="jd-descrdiv">Create a new access token using the specified verifier
+ and insert it into the pool</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/oauth/OAuthManager.html#destroyAccessToken(java.lang.String, C)">destroyAccessToken</a></span>(String userId, C connector)</nobr>
+        
+        <div class="jd-descrdiv">Destroy an access token</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            C</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/oauth/OAuthManager.html#getDefaultUnauthorizedConnector()">getDefaultUnauthorizedConnector</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Retrieve default unauthorized connector
+</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/oauth/OAuthManager.html#releaseAccessToken(java.lang.String, C)">releaseAccessToken</a></span>(String userId, C connector)</nobr>
+        
+        <div class="jd-descrdiv">Return an access token to the pool</div>
+  
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-org.mule.module.google.task.process.ProcessAdapter" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-org.mule.module.google.task.process.ProcessAdapter-trigger"
+          src="../../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="../../../../../../../org/mule/module/google/task/process/ProcessAdapter.html">org.mule.module.google.task.process.ProcessAdapter</a>
+
+<div id="inherited-methods-org.mule.module.google.task.process.ProcessAdapter">
+  <div id="inherited-methods-org.mule.module.google.task.process.ProcessAdapter-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-org.mule.module.google.task.process.ProcessAdapter-summary" style="display: none;">
     <table class="jd-sumtable-expando">
     
 
@@ -2578,10 +2649,10 @@ From interface
             
             
             &lt;T&gt;
-            ProcessTemplate&lt;T,&nbsp;O&gt;</nobr>
+            <a href="../../../../../../../java/org/mule/module/google/task/process/ProcessTemplate.html">ProcessTemplate</a>&lt;T,&nbsp;O&gt;</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getProcessTemplate</span>()</nobr>
+        <span class="sympad"><a href="../../../../../../../org/mule/module/google/task/process/ProcessAdapter.html#getProcessTemplate()">getProcessTemplate</a></span>()</nobr>
         
   </td></tr>
 
@@ -2650,7 +2721,7 @@ From interface
         <span class="jd-tagtitle">Constant Value: </span>
         <span>
             
-                "master.1506.f576be1"
+                "master.1536.5302245"
             
         </span>
         </div>
@@ -3295,15 +3366,19 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Borrow an access token from the pool</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
           <th>userId</td>
-          <td></td>
+          <td>User identification used to borrow the access token</td>
         </tr>
       </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>An existing authorized connector</li></ul>
   </div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Throws</h5>
@@ -3392,15 +3467,20 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Create a new access token using the specified verifier
+ and insert it into the pool</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
           <th>verifier</td>
-          <td></td>
+          <td>OAuth verifier</td>
         </tr>
       </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A newly created connector</li></ul>
   </div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Throws</h5>
@@ -3789,7 +3869,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the build of the DevKit used to create this module
+</p></div>
 
     </div>
 </div>
@@ -3820,7 +3901,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the version of the DevKit used to create this module
+</p></div>
 
     </div>
 </div>
@@ -3917,7 +3999,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the user-friendly name of this module
+</p></div>
 
     </div>
 </div>
@@ -3948,7 +4031,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the version of this module
+</p></div>
 
     </div>
 </div>
@@ -3997,7 +4081,7 @@ From interface
          
          
          
-        ProcessTemplate&lt;P,&nbsp;<a href="../../../../../../../java/org/mule/module/google/task/adapters/GoogleTasksConnectorOAuth2Adapter.html">GoogleTasksConnectorOAuth2Adapter</a>&gt;
+        <a href="../../../../../../../java/org/mule/module/google/task/process/ProcessTemplate.html">ProcessTemplate</a>&lt;P,&nbsp;<a href="../../../../../../../java/org/mule/module/google/task/adapters/GoogleTasksConnectorOAuth2Adapter.html">GoogleTasksConnectorOAuth2Adapter</a>&gt;
       </span>
       <span class="sympad">getProcessTemplate</span>
       <span class="normal">()</span>
@@ -4091,7 +4175,7 @@ From interface
 </div>
 
 
-<A NAME="isCapableOf(org.mule.api.Capability)"></A>
+<A NAME="isCapableOf(org.mule.module.google.task.basic.Capability)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -4104,7 +4188,7 @@ From interface
         boolean
       </span>
       <span class="sympad">isCapableOf</span>
-      <span class="normal">(Capability capability)</span>
+      <span class="normal">(<a href="../../../../../../../java/org/mule/module/google/task/basic/Capability.html">Capability</a> capability)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -4124,9 +4208,14 @@ From interface
       <table class="jd-tagtable">
         <tr>
           <th>capability</td>
-          <td></td>
+          <td>The capability to test for</td>
         </tr>
       </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>True if it does, false otherwise
+</li></ul>
   </div>
 
     </div>

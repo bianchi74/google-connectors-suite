@@ -206,11 +206,21 @@
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/module/google/task/package-summary.html">org.mule.module.google.task</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/module/google/task/adapter/package-summary.html">org.mule.module.google.task.adapter</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/module/google/task/adapters/package-summary.html">org.mule.module.google.task.adapters</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/module/google/task/agents/package-summary.html">org.mule.module.google.task.agents</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/module/google/task/basic/package-summary.html">org.mule.module.google.task.basic</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/module/google/task/callback/package-summary.html">org.mule.module.google.task.callback</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/module/google/task/config/package-summary.html">org.mule.module.google.task.config</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/module/google/task/connection/package-summary.html">org.mule.module.google.task.connection</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../java/org/mule/module/google/task/devkit/package-summary.html">org.mule.module.google.task.devkit</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../java/org/mule/module/google/task/model/package-summary.html">org.mule.module.google.task.model</a></li>
     <li class="selected api apilevel-">
@@ -227,6 +237,16 @@
           <div id="classes-nav">
             <ul>
               
+    <li><h2>Interfaces</h2>
+      <ul>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/OAuth1Adapter.html">OAuth1Adapter</a></li>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/OAuth2Adapter.html">OAuth2Adapter</a></li>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/OAuthAdapter.html">OAuthAdapter</a></li>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/OAuthManager.html">OAuthManager</a>&lt;C&nbsp;extends&nbsp;<a href="../../../../../../../java/org/mule/module/google/task/oauth/OAuthAdapter.html">OAuthAdapter</a>&gt;</li>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/RestoreAccessTokenCallback.html">RestoreAccessTokenCallback</a></li>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/SaveAccessTokenCallback.html">SaveAccessTokenCallback</a></li>
+      </ul>
+    </li>
               
     <li><h2>Classes</h2>
       <ul>
@@ -244,6 +264,13 @@
               
               
               
+    <li><h2>Exceptions</h2>
+      <ul>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/NotAuthorizedException.html">NotAuthorizedException</a></li>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/UnableToAcquireAccessTokenException.html">UnableToAcquireAccessTokenException</a></li>
+        <li class="api apilevel-"><a href="../../../../../../../java/org/mule/module/google/task/oauth/UnableToAcquireRequestTokenException.html">UnableToAcquireRequestTokenException</a></li>
+      </ul>
+    </li>
               
             </ul><br/>
           </div><!-- end classes -->
@@ -304,6 +331,38 @@
 
 
   
+    <h2>Interfaces</h2>
+    <div class="jd-sumtable">
+    
+  <table class="jd-sumtable-expando">
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/module/google/task/oauth/OAuth1Adapter.html">OAuth1Adapter</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/module/google/task/oauth/OAuth2Adapter.html">OAuth2Adapter</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/module/google/task/oauth/OAuthAdapter.html">OAuthAdapter</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/module/google/task/oauth/OAuthManager.html">OAuthManager</a>&lt;C&nbsp;extends&nbsp;<a href="../../../../../../../java/org/mule/module/google/task/oauth/OAuthAdapter.html">OAuthAdapter</a>&gt;</td>
+              <td class="jd-descrcol" width="100%">Wrapper around org.mule.api.annotations.oauth.OAuth annotated class that will infuse it with
+ access token management capabilities.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/module/google/task/oauth/RestoreAccessTokenCallback.html">RestoreAccessTokenCallback</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/module/google/task/oauth/SaveAccessTokenCallback.html">SaveAccessTokenCallback</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+  </table>
+    </div>
+  
 
 
   
@@ -357,6 +416,29 @@
   
 
 
+  
+    <h2>Exceptions</h2>
+    <div class="jd-sumtable">
+    
+  <table class="jd-sumtable-expando">
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/module/google/task/oauth/NotAuthorizedException.html">NotAuthorizedException</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/module/google/task/oauth/UnableToAcquireAccessTokenException.html">UnableToAcquireAccessTokenException</a></td>
+              <td class="jd-descrcol" width="100%">Exception thrown when the access token needed for accessing a protected resource cannot be acquired
+ 
+&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../../java/org/mule/module/google/task/oauth/UnableToAcquireRequestTokenException.html">UnableToAcquireRequestTokenException</a></td>
+              <td class="jd-descrcol" width="100%">Exception thrown when the request token needed for building the authorization URL cannot be acquired
+ 
+&nbsp;</td>
+          </tr>
+  </table>
+    </div>
   
 
 

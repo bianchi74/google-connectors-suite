@@ -15,7 +15,6 @@ import java.util.Map;
 import org.mule.modules.google.api.model.BaseWrapper;
 
 import com.google.api.client.http.HttpHeaders;
-import com.google.api.client.json.JsonFactory;
 import com.google.api.client.util.ClassInfo;
 
 /**
@@ -32,10 +31,6 @@ public class Calendar extends BaseWrapper<com.google.api.services.calendar.model
 	
 	public Calendar(com.google.api.services.calendar.model.Calendar wrapped) {
 		super(wrapped);
-	}
-
-	public final JsonFactory getFactory() {
-		return wrapped.getFactory();
 	}
 
 	public String getKind() {
@@ -84,10 +79,6 @@ public class Calendar extends BaseWrapper<com.google.api.services.calendar.model
 
 	public int hashCode() {
 		return wrapped.hashCode();
-	}
-
-	public final void setFactory(JsonFactory factory) {
-		wrapped.setFactory(factory);
 	}
 
 	public void setKind(String kind) {

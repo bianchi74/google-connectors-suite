@@ -341,7 +341,7 @@ public class GoogleCalendarConnector extends AbstractGoogleOAuthConnector {
     /**
      * Searchs and returns events matching the criteria parameters. If a criteria is not specified, then it is not applied
      * 
-     * For supporting google's paging mechanism, the next page token is store on the message property
+     * For supporting google's paging mechanism, the next page token is stored on the message property
      * &quot;GoogleCalendar_NEXT_PAGE_TOKEN&quot;. If there isn't a next page, then the property is removed
      * 
      * {@sample.xml ../../../doc/GoogleCalendarConnector.xml.sample google-calendars:get-events}
@@ -379,7 +379,7 @@ public class GoogleCalendarConnector extends AbstractGoogleOAuthConnector {
     		@Optional Integer maxAttendees,
     		@Optional Integer maxResults,
     		@Optional String orderBy,
-    		@Optional String pageToken,
+    		@Optional @Default("#[flowVars['GoogleCalendar_NEXT_PAGE_TOKEN']]") String pageToken,
     		@Optional String query,
     		@Optional @Default("false") boolean showDeleted,
     		@Optional @Default("false") boolean showHiddenInvitations,

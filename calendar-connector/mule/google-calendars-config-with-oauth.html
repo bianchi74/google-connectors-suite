@@ -2680,7 +2680,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
       
   <div class="jd-tagdata jd-tagdescr"><p>Searchs and returns events matching the criteria parameters. If a criteria is not specified, then it is not applied
  
- For supporting google's paging mechanism, the next page token is store on the message property
+ For supporting google's paging mechanism, the next page token is stored on the message property
  &quot;GoogleCalendar_NEXT_PAGE_TOKEN&quot;. If there isn't a next page, then the property is removed
  
  <div class="jd-tagdata"><h5 class="jd-tagtitle">XML Sample</h5><pre>&lt;google-calendars:get-events calendarId="mariano.gonzalez@mulesoft.com" timeMin="2012-01-01T00:00:00Z"/&gt;</pre></div></p></div>
@@ -2775,7 +2775,7 @@ of the object store that he wishes to use to save and restore access tokens.</p>
                 
                     <tr class=" api apilevel-" >
                         <td class="jd-linkcol"><nobr>pageToken</nobr></td>
-                        <td class="jd-descrcol"></td>
+                        <td class="jd-descrcol">#[flowVars[\'GoogleCalendar_NEXT_PAGE_TOKEN\']]</td>
                         <td class="jd-descrcol"><i>Optional.&nbsp;</i>Token specifying which result page to return</td>
                         <td class="jd-descrcol">String</td>
                         <td class="jd-descrcol">*/*</td>

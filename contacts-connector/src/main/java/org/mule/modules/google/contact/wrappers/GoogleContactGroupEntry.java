@@ -14,8 +14,6 @@ import com.google.gdata.data.contacts.SystemGroup;
 
 public class GoogleContactGroupEntry extends GoogleContactBaseEntity<ContactGroupEntry> {
 	
-	private ContactGroupEntry wrapped;
-	
 	public GoogleContactGroupEntry() {
 		super(new ContactGroupEntry());
 	}

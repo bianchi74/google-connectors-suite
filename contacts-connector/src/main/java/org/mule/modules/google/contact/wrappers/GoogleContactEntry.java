@@ -22,8 +22,6 @@ import com.google.gdata.data.extensions.Name;
 
 public class GoogleContactEntry extends GoogleContactBaseEntity<ContactEntry> {
 	
-	private ContactEntry wrapped;
-	
 	public GoogleContactEntry() {
 		super(new ContactEntry());
 	}

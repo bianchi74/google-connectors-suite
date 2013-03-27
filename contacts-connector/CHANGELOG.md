@@ -1,3 +1,7 @@
+1.7.1
+=====
+	* Minor fix in wrappers (Fix CLDCONNECT-822)
+
 1.7
 ===
 	* Added demo project (Mule Studio Application)

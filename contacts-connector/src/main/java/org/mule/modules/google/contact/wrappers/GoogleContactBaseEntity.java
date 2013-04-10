@@ -15,14 +15,15 @@ import com.google.gdata.data.TextConstruct;
 
 abstract public class GoogleContactBaseEntity<W extends BaseEntry<?>> {
 			
+	@SuppressWarnings("unchecked")
+	static public <T> T getWrappedEntity(Class<T> type, GoogleContactBaseEntity<?> entity) {
+		return (T) entity.wrapped;
+	}
+	
 	protected W wrapped;
 		
 	public GoogleContactBaseEntity(W wrapped) {
 		this.wrapped = wrapped;
-	}
-
-	public W getWrapped() {
-		return wrapped;
 	}
 	
 	public void setId(String id) { 

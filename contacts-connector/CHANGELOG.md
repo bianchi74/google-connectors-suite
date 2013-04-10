@@ -1,3 +1,12 @@
+1.7.3
+=====
+	* Added getters/setters to GoogleContactEntry POJO
+	* Changed getEmailAddresses and setEmailAddresses signatures. Previously using List<String>, now List<Email>
+
+1.7.2
+=====
+	* Changed UpdateDateTime getters/setters to Update
+
 1.7.1
 =====
 	* Minor fix in wrappers (Fix CLDCONNECT-822)

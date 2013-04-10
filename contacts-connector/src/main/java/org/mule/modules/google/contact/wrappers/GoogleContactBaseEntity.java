@@ -49,11 +49,11 @@ abstract public class GoogleContactBaseEntity<W extends BaseEntry<?>> {
 		return wrapped.getTitle();
 	}
 	
-	public void setUpdateDatetime(Long datetime) {
+	public void setUpdated(Long datetime) {
 		wrapped.setUpdated(new DateTime(datetime));
 	}
 	
-	public Long getUpdateDatetime() {
+	public Long getUpdated() {
 		return wrapped.getUpdated() != null ? wrapped.getUpdated().getValue() : 0l;
 	}
 	
@@ -72,4 +72,9 @@ abstract public class GoogleContactBaseEntity<W extends BaseEntry<?>> {
 	public Boolean getCanEdit() {
 		return wrapped.getCanEdit();
 	}
+	
+	// Only getter
+	public Long getEdited() {
+		return wrapped.getEdited() != null ? wrapped.getEdited().getValue() : 0l;
+	}	
 }

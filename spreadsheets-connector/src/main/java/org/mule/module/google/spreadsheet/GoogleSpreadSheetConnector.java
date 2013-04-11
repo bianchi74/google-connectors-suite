@@ -157,10 +157,15 @@ public class GoogleSpreadSheetConnector extends AbstractGoogleOAuthConnector {
 		
 		this.spreadsheetService = new SpreadsheetService(this.applicationName);
 		this.spreadsheetService.setOAuth2Credentials(credential);
-		this.spreadsheetService.setHeader("If-Match", "*");
+		setHeaderValue("*");
 		
 		this.docService = new DocsService(this.applicationName);
 		this.docService.setOAuth2Credentials(credential);
+	}
+
+	private void setHeaderValue(String value) {
+		if(this.spreadsheetService!=null)
+			this.spreadsheetService.setHeader("If-Match", value);
 	}
 	
     /**
@@ -255,8 +260,10 @@ public class GoogleSpreadSheetConnector extends AbstractGoogleOAuthConnector {
     	ws.setTitle(new PlainTextConstruct(title));
     	ws.setRowCount(rowCount);
     	ws.setColCount(colCount);
+    	//This flag is not required when inserting a worksheet and if set, will make the call fail
+    	setHeaderValue(null);
     	ws = this.spreadsheetService.insert(ss.getWorksheetFeedUrl(), ws);
-    	
+    	setHeaderValue("*");
     	return new Worksheet(ws);
     }
     

@@ -22,7 +22,8 @@
 		<module>spreadsheets-connector</module>
 		<module>tasks-connector</module>
 		<module>gmail-connector</module>
-	</modules>
+        <module>mirror-connector</module>
+    </modules>
 
 	<properties>
 		<junit.version>4.9</junit.version>

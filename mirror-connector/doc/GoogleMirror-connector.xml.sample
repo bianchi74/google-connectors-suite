@@ -1,0 +1,5 @@
+<!-- BEGIN_INCLUDE(google-mirror:insert-timeline-item) -->
+<google-mirror:insert-timeline-item xmlns:google-mirror="http://www.mulesoft.org/schema/mule/google-mirror">
+    <google-mirror:item  ref="#[payload]"/>
+</google-mirror:insert-timeline-item>
+<!-- END_INCLUDE(google-mirror:insert-timeline-item) -->

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:spring="http://www.springframework.org/schema/beans"
+      xmlns:http="http://www.mulesoft.org/schema/mule/http"
+      xmlns:google-mirror="http://www.mulesoft.org/schema/mule/google-mirror"
+      xmlns:scripting="http://www.mulesoft.org/schema/mule/scripting"
+      xsi:schemaLocation="
+        http://www.mulesoft.org/schema/mule/scripting http://www.mulesoft.org/schema/mule/scripting/current/mule-scripting.xsd
+        http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+        http://www.mulesoft.org/schema/mule/google-mirror http://www.mulesoft.org/schema/mule/google-mirror/current/mule-google-mirror.xsd">
+
+    <spring:beans>
+        <spring:bean id="objectStore" class="org.mule.util.store.SimpleMemoryObjectStore"/>
+    </spring:beans>
+
+    <google-mirror:config-with-oauth  consumerKey="770684227314-ajspgqem8a04vnd61n350838mgbe2106.apps.googleusercontent.com"
+                                     consumerSecret="h68SGBFJ45g6NdYtSu1l9-ow"
+                                     applicationName="Mirror">
+
+        <google-mirror:oauth-callback-config domain="localhost" path="google-glass-oauth2-callback"/>
+        <google-mirror:oauth-store-config objectStore-ref="objectStore"/>
+    </google-mirror:config-with-oauth>
+
+    <flow name="insert">
+        <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" path="timeline"/>
+        <scripting:component >
+            <scripting:script engine="Groovy">
+<![CDATA[
+com.google.api.services.mirror.model.TimelineItem item = new com.google.api.services.mirror.model.TimelineItem()
+.setText(payload.toString());
+return item;
+]]></scripting:script>
+        </scripting:component>
+
+        <google-mirror:insert-timeline-item >
+            <google-mirror:item ref="#[payload]"/>
+        </google-mirror:insert-timeline-item>
+
+    </flow>
+
+</mule>

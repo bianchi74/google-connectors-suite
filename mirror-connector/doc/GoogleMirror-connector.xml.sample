@@ -3,3 +3,7 @@
     <google-mirror:item  ref="#[payload]"/>
 </google-mirror:insert-timeline-item>
 <!-- END_INCLUDE(google-mirror:insert-timeline-item) -->
+
+<!-- BEGIN_INCLUDE(google-mirror:list-timeline) -->
+<google-mirror:list-timeline xmlns:google-mirror="http://www.mulesoft.org/schema/mule/google-mirror"/>
+<!-- END_INCLUDE(google-mirror:list-timeline) -->

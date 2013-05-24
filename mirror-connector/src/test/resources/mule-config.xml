@@ -1,45 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns="http://www.mulesoft.org/schema/mule/core"
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file"
+      xmlns:json="http://www.mulesoft.org/schema/mule/json"
+      xmlns="http://www.mulesoft.org/schema/mule/core"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns:spring="http://www.springframework.org/schema/beans"
       xmlns:http="http://www.mulesoft.org/schema/mule/http"
       xmlns:google-mirror="http://www.mulesoft.org/schema/mule/google-mirror"
-      xmlns:scripting="http://www.mulesoft.org/schema/mule/scripting"
-      xsi:schemaLocation="
-        http://www.mulesoft.org/schema/mule/scripting http://www.mulesoft.org/schema/mule/scripting/current/mule-scripting.xsd
+      xsi:schemaLocation="http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd 
+
+
         http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
         http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
         http://www.mulesoft.org/schema/mule/google-mirror http://www.mulesoft.org/schema/mule/google-mirror/current/mule-google-mirror.xsd">
 
     <spring:beans>
-        <spring:bean id="objectStore" class="org.mule.util.store.SimpleMemoryObjectStore"/>
+        <spring:bean id="myStore" scope="singleton" class="org.mule.util.store.SimpleMemoryObjectStore"/>
     </spring:beans>
 
-    <google-mirror:config-with-oauth  consumerKey="770684227314-ajspgqem8a04vnd61n350838mgbe2106.apps.googleusercontent.com"
-                                     consumerSecret="h68SGBFJ45g6NdYtSu1l9-ow"
-                                     applicationName="Mirror">
+    <google-mirror:config-with-oauth
+            consumerKey="770684227314-ajspgqem8a04vnd61n350838mgbe2106.apps.googleusercontent.com"
+            consumerSecret="h68SGBFJ45g6NdYtSu1l9-ow"
+            applicationName="Mirror" >
 
-        <google-mirror:oauth-callback-config domain="localhost" path="google-glass-oauth2-callback"/>
-        <google-mirror:oauth-store-config objectStore-ref="objectStore"/>
+        <google-mirror:oauth-callback-config domain="tunnel.cloudhub.io" path="google-mirror-oauth-callback"
+                                             localPort="8082"/>
+        <google-mirror:oauth-store-config objectStore-ref="myStore"/>
     </google-mirror:config-with-oauth>
+
+    <flow name="authorize">
+        <http:inbound-endpoint host="localhost" port="8081" path="/auth"/>
+        <google-mirror:authorize/>
+    </flow>
 
     <flow name="insert">
         <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" path="timeline"/>
-        <scripting:component >
-            <scripting:script engine="Groovy">
-<![CDATA[
-com.google.api.services.mirror.model.TimelineItem item = new com.google.api.services.mirror.model.TimelineItem()
-.setText(payload.toString());
-return item;
-]]></scripting:script>
-        </scripting:component>
+        <http:body-to-parameter-map-transformer/>
+        <component class="org.mule.google.mirror.TimelineCreator"/>
 
-        <google-mirror:insert-timeline-item >
+        <logger message="#[message]"/>
+
+        <!--<enricher target="#[flowVars['tokenId']]">-->
+        <!--<objectstore:retrieve key="#[flowVars['themuleman@gmail.com']]" />-->
+        <!--</enricher>-->
+
+        <google-mirror:insert-timeline-item accessTokenId="themuleman@gmail.com">
             <google-mirror:item ref="#[payload]"/>
         </google-mirror:insert-timeline-item>
 
+    </flow>
+
+
+    <flow name="local-service">
+        <!-- note gateway local port is 8088-->
+        <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8088"/>
+        <!--<http:body-to-parameter-map-transformer/>-->
+        <logger level="WARN" message="Callback made #[message]"/>
+        <logger level="WARN" message="this is the payload of callback #[payload]"/>
+        <json:object-to-json-transformer/>
+        <file:outbound-endpoint path="/Users/ross/MuleStudio/workspace/webtunnel/data"
+                                outputPattern="#[function:uuid].json" responseTimeout="10000"/>
     </flow>
 
 </mule>
